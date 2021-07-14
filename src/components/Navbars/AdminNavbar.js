@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 // reactstrap components
@@ -22,21 +21,44 @@ import {
 const AdminNavbar = (props) => {
   return (
     <>
-      <Navbar 
-      className="navbar-top navbar-dark" expand="md" id="navbar-main">
+      <Navbar
+        className="navbar-top navbar-light"
+        expand="md"
+        id="navbar-main"
+        style={{ backgroundColor: "white" }}
+      >
         <Container fluid>
           <Form className="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
             <FormGroup className="mb-0">
               <InputGroup className="input-group-alternative">
                 <InputGroupAddon addonType="prepend">
-                  <InputGroupText>
-                    <i className="fas fa-search" />
-                  </InputGroupText>
+                  <i className="fas fa-search" />
+                  <InputGroupText></InputGroupText>
                 </InputGroupAddon>
-                <Input placeholder="Search" type="text" />
+                <Input
+                  placeholder="Search"
+                  type="text"
+                  style={{
+                    color: "black",
+                    //position: "left"
+                  }}
+                />
               </InputGroup>
             </FormGroup>
           </Form>
+
+          <button className="btn ">
+            <i class="fas fa-layer-group"></i>
+          </button>
+
+          <button className="btn ">
+            <i class="fas fa-check-circle"></i>
+          </button>
+
+          <button className="btn ">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+
           <Nav className="align-items-center d-none d-md-flex" navbar>
             <UncontrolledDropdown nav>
               <DropdownToggle className="pr-0" nav>
@@ -44,19 +66,26 @@ const AdminNavbar = (props) => {
                   <span className="avatar avatar-sm rounded-circle">
                     <img
                       alt="..."
-                      src={
-                        require("../../assets/img/theme/team-4-800x800.jpg")
-                          .default
-                      }
+                      //user profile img hosted
+                      src="https://i.ibb.co/zNBr3SD/Screenshot-2021-07-14-234407.png"
                     />
                   </span>
                   <Media className="ml-2 d-none d-lg-block">
                     <span className="mb-0 text-sm font-weight-bold">
-                      Jessica Jones
+                      Mohammed Ali
+                      
                     </span>
+                   
+                    
                   </Media>
+                  <i class="fas fa-sort-down"></i>
+
                 </Media>
+               
+
               </DropdownToggle>
+           
+
               <DropdownMenu className="dropdown-menu-arrow" right>
                 <DropdownItem className="noti-title" header tag="div">
                   <h6 className="text-overflow m-0">Welcome!</h6>
