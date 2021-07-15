@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./AdminNavbarStyle.css";
 // reactstrap components
 import {
   DropdownMenu,
@@ -62,17 +63,27 @@ const AdminNavbar = (props) => {
             </FormGroup>
           </Form>
 
-          <button className="btn ">
+          <a className="test">
             <i class="fas fa-layer-group"></i>
-          </button>
+            <span class="num1">2</span>
+          </a>
 
-          <button className="btn ">
-            <i class="fas fa-check-circle"></i>
-          </button>
+          {/* <button className="btn "> */}
+          {/* <i class="fas fa-check-circle"></i> */}
+          <a className="test">
+            <span class="fa fa-check-circle"></span>
+            <span class="num2">2</span>
+          </a>
+          {/* <a class="fa fa-globe">
+              
+              
+            </a> */}
+          {/* </button> */}
 
-          <button className="btn ">
-            <i class="fas fa-shopping-cart"></i>
-          </button>
+          <a className="test">
+            <i class="fas fa-shopping-cart fa-shopping-cart1"></i>
+            <span class="num3">2</span>
+          </a>
 
           <Nav className="align-items-center d-none d-md-flex" navbar>
             <UncontrolledDropdown nav>
@@ -90,11 +101,7 @@ const AdminNavbar = (props) => {
                       Mohammed Ali
                     </span>
                   </Media>
-                  <i class="fas fa-sort-down"    style={{
-                      position: "relative",
-                      bottom :"5px",
-                      left: "20px",
-                    }}></i>
+                  <i className="fas fa-sort-down" style={{}}></i>
                 </Media>
               </DropdownToggle>
 
