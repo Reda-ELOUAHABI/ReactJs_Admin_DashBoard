@@ -5106,6 +5106,7 @@ button.bg-darker:focus {
   background-color: #fff !important; }
 
 .bg-transparent {
+   /* it doesn't do anything */
   background-color: transparent !important; }
 
 .border {
@@ -5873,10 +5874,10 @@ button.bg-darker:focus {
   box-shadow: 0 0 0.5rem rgba(136, 152, 170, 0.075) !important; }
 
 .shadow, .card-profile-image img {
-  box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15) !important; }
+  box-shadow: 0 0 2rem 0 rgba(228, 232, 236, 0.15) !important; }
 
 .shadow-lg {
-  box-shadow: 0 0 3rem rgba(136, 152, 170, 0.175) !important; }
+  box-shadow: 0 0 3rem rgba(126, 132, 139, 0.175) !important; }
 
 .shadow-none {
   box-shadow: none !important; }
@@ -10632,7 +10633,7 @@ button.bg-lighter:focus {
   background: linear-gradient(87deg, #212529 0, #212229 100%) !important; }
 
 .bg-gradient-default {
-  background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important; }
+  background: linear-gradient(87deg, #aebeda 0, #a5a4c7 100%) !important; }
 
 .bg-gradient-white {
   background: linear-gradient(87deg, #fff 0, white 100%) !important; }
@@ -10848,8 +10849,8 @@ button.section-darker:focus {
 .bg-gradient-dark {
   background: linear-gradient(87deg, #212529 0, #212229 100%) !important; }
 
-.bg-gradient-default {
-  background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important; }
+/* .bg-gradient-default {
+  background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important; } */
 
 .bg-gradient-white {
   background: linear-gradient(87deg, #fff 0, white 100%) !important; }

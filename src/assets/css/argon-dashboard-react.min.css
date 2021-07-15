@@ -6311,6 +6311,8 @@ button.bg-darker:focus {
   background-color: #fff !important;
 }
 .bg-transparent {
+
+  /* it doesn't do anything */
   background-color: transparent !important;
 }
 .border {
@@ -13234,9 +13236,14 @@ button.bg-lighter:focus {
 .bg-gradient-dark {
   background: linear-gradient(87deg, #212529 0, #212229 100%) !important;
 }
-.bg-gradient-default {
+/* .bg-gradient-default {
   background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important;
-}
+} */
+.bg-gradient-default {
+  background: linear-gradient(87deg, #aebeda 0, #a5a4c7 100%) !important; }
+
+
+
 .bg-gradient-white {
   background: linear-gradient(87deg, #fff 0, #fff 100%) !important;
 }
@@ -13468,9 +13475,9 @@ button.section-darker:focus {
 .bg-gradient-dark {
   background: linear-gradient(87deg, #212529 0, #212229 100%) !important;
 }
-.bg-gradient-default {
+/* .bg-gradient-default {
   background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important;
-}
+} */
 .bg-gradient-white {
   background: linear-gradient(87deg, #fff 0, #fff 100%) !important;
 }

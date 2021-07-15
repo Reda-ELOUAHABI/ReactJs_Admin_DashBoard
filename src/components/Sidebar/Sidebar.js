@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import { NavLink as NavLinkRRD, Link } from "react-router-dom";
 // nodejs library to set properties for components
 import { PropTypes } from "prop-types";
-
+import "./style.css";
+import "../../views/style.css"
 // reactstrap components
 import {
   Button,
@@ -200,6 +201,7 @@ const Sidebar = (props) => {
           <Form className="mt-4 mb-3 d-md-none">
             <InputGroup className="input-group-rounded input-group-merge">
               <Input
+                id="#inputID"
                 aria-label="Search"
                 className="form-control-rounded form-control-prepended"
                 placeholder="Search"
@@ -221,13 +223,14 @@ const Sidebar = (props) => {
           {/* Navigation */}
           <Nav className="mb-md-3" navbar>
             <NavItem>
-              <NavLink href="/#">
+              {/* //to work on in order to prevent the default index*/}
+              <NavLink href="/online_store">
                 <i className="fas fa-store" />
                 Online Store
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/#">
+              <NavLink href="/others_store">
                 <i className="fas fa-cloud" />
                 Others Store
               </NavLink>
