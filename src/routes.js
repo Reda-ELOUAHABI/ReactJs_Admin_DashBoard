@@ -1,32 +1,22 @@
-/*!
-
-=========================================================
-* Argon Dashboard React - v1.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import Index from "views/Index.js";
-import Profile from "views/examples/Profile.js";
-import Maps from "views/examples/Maps.js";
+
+
 // import Register from "views/examples/Register.js";
 // import Login from "views/examples/Login.js";
-import Tables from "views/examples/Tables.js";
-import Icons from "views/examples/Icons.js";
+
+
+import OnlineStore from "views/examples/OnlineStore";
+import OthersStore from "views/examples/OthersStore";
+import Orders from "views/examples/Orders";
+import Products from "views/examples/Products";
+import Customers from "views/examples/Customers";
+import Analytics from "views/examples/Analytics";
 
 var routes = [
   {
     path: "/index",
     name: "Home",
+    // icon ppte: text-primary text-blue text-orange text-yellow
     icon: "fa fa-home text-primary",
     component: Index,
     layout: "/admin",
@@ -35,28 +25,43 @@ var routes = [
     path: "/orders",
     name: "Orders",
     icon: "fa fa-shopping-cart text-blue",
-    component: Icons,
+    component: Orders,
     layout: "/admin",
   },
   {
     path: "/products",
     name: "Products",
     icon: "fa fa-tag text-orange",
-    component: Maps,
+    component: Products,
     layout: "/admin",
   },
   {
     path: "/customers",
     name: "Customers",
     icon: "ni ni-single-02 text-yellow",
-    component: Profile,
+    component: Customers,
     layout: "/admin",
   },
   {
     path: "/analytics",
     name: "Analytics",
     icon: "fas fa-chart-line text-yellow",
-    component: Tables,
+    component: Analytics,
+    layout: "/admin",
+  },
+
+  {
+    path: "/online_store",
+    name: " Online Store",
+    icon: "fas fa-store",
+    component: OnlineStore,
+    layout: "/admin",
+  },
+  {
+    path: "/others_store",
+    name: "Others Store",
+    icon: "fas fa-cloud ",
+    component: OthersStore,
     layout: "/admin",
   },
 ];

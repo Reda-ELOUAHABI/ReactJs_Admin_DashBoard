@@ -36,7 +36,7 @@ const Index = (props) => {
   if (window.Chart) {
     parseOptions(Chart, chartOptions());
   }
-  //const objt = {backgroundColor:"red"};
+  //const objt = {backgroundColor:"white"};
   const toggleNavs = (e, index) => {
     e.preventDefault();
     setActiveNav(index);
@@ -47,18 +47,19 @@ const Index = (props) => {
       <Header />
       {/* Page content */}
       <Container className="mt--7" fluid>
-        <Row>
-          <Col className="mb-5 mb-xl-0 test" xl="8">
-            <Card className="bg-gradient-default shadow">
-              <CardHeader className="bg-transparent">
-                <Row className="align-items-center">
-                  <div className="col">
+        <Row  style={{backgroundColor:"white "}}>
+          <Col className="mb-5 mb-xl-0 test" xl="8"  style={{backgroundColor:"white "}}>
+            {/* <Card className="bg-gradient-default shadow"  style={{backgroundColor:"white"}}> */}
+            <Card className=" shadow"  style={{backgroundColor:"white"}}>
+              <CardHeader className="bg-transparent"  style={{backgroundColor:"white"}}>
+                <Row className="align-items-center" style={{backgroundColor:"white "}}>
+                  <div className="col" style={{backgroundColor:"white "}}>
                     <h2 className="text-white mb-0">Cumulative Total</h2>
                   </div>
-                  <div className="col">
-                    <Nav className="justify-content-end" pills>
-                      <NavItem>
-                        <NavLink
+                  <div className="col" style={{backgroundColor:"white "}}>
+                    <Nav className="justify-content-end" pills style={{backgroundColor:"white "}}>
+                      <NavItem style={{backgroundColor:"white "}}>
+                        <NavLink  style={{backgroundColor:"white "}}
                           className={classnames("py-2 px-3", {
                             active: activeNav === 1,
                           })}
@@ -70,8 +71,9 @@ const Index = (props) => {
                           </span>
                         </NavLink>
                       </NavItem>
-                      <NavItem>
+                      <NavItem style={{backgroundColor:"white "}}>
                         <NavLink
+                        style={{backgroundColor:"white "}}
                           className={classnames("py-2 px-3", {
                             active: activeNav === 2,
                           })}
@@ -87,12 +89,13 @@ const Index = (props) => {
                 </Row>
               </CardHeader>
 
-              <CardBody>
+              <CardBody style={{backgroundColor:"white "}}>
                 {/* Chart */}
-                <div className="chart">
+                <div className="chart"  style={{backgroundColor:"white"}}>
                   <Line
                     data={chartExample1[chartExample1Data]}
                     options={chartExample1.options}
+                    style={{backgroundColor:"white"}}
                     getDatasetAtEvent={(e) => console.log(e)}
                   />
                 </div>

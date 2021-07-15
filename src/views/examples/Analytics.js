@@ -24,7 +24,7 @@ import {
 // core components
 import Header from "components/Headers/Header.js";
 
-const Tables = () => {
+const Analytics = () => {
   return (
     <>
       <Header />
@@ -35,7 +35,7 @@ const Tables = () => {
           <div className="col">
             <Card className="shadow">
               <CardHeader className="border-0">
-                <h3 className="mb-0">Card tables</h3>
+                <h3 className="mb-0">Card Analytics</h3>
               </CardHeader>
        
            </Card>
@@ -46,4 +46,4 @@ const Tables = () => {
   );
 };
 
-export default Tables;
+export default Analytics;

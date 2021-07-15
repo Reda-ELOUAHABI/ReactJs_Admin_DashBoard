@@ -4,14 +4,11 @@ import { NavLink as NavLinkRRD, Link } from "react-router-dom";
 // nodejs library to set properties for components
 import { PropTypes } from "prop-types";
 import "./style.css";
-import "../../views/style.css"
+import "../../views/style.css";
+
+// import routes1 from "../../routes1";
 // reactstrap components
 import {
-  Button,
-  Card,
-  CardHeader,
-  CardBody,
-  CardTitle,
   Collapse,
   DropdownMenu,
   DropdownItem,
@@ -53,7 +50,15 @@ const Sidebar = (props) => {
     setCollapseOpen(false);
   };
   // creates the links that appear in the left menu / Sidebar
+
+  let routes1 =[];
   const createLinks = (routes) => {
+    //devide the router array into 2 differents links devisions as they asked
+    routes1 = routes.slice(5, 7);
+    routes = routes.slice(0, 5);
+    // console.log(routes);
+    // console.log("\n");
+    // console.log(routes1);
     return routes.map((prop, key) => {
       return (
         <NavItem key={key}>
@@ -65,6 +70,24 @@ const Sidebar = (props) => {
           >
             <i className={prop.icon} />
             {prop.name}
+          </NavLink>
+        </NavItem>
+      );
+    });
+  };
+
+  const createLinks1 = () => {
+    return routes1.map((routes1, key) => {
+      return (
+        <NavItem key={key}>
+          <NavLink
+            to={routes1.layout + routes1.path}
+            tag={NavLinkRRD}
+            onClick={closeCollapse}
+            activeClassName="active"
+          >
+            <i className={routes1.icon} />
+            {routes1.name}
           </NavLink>
         </NavItem>
       );
@@ -221,21 +244,39 @@ const Sidebar = (props) => {
           {/* Heading */}
           <h6 className="navbar-heading text-muted">Sales Channels</h6>
           {/* Navigation */}
-          <Nav className="mb-md-3" navbar>
-            <NavItem>
-              {/* //to work on in order to prevent the default index*/}
+
+          <Nav navbar>{createLinks1()}</Nav>
+          {/* <Nav className="mb-md-3" navbar>
+          <NavItem>
+          <NavLink
+            to={routes.layout + prop.path}
+            tag={NavLinkRRD}
+            onClick={closeCollapse}
+            activeClassName="active"
+          >
+            <i className={prop.icon} />
+            {prop.name}
+          </NavLink>
+        </NavItem> */}
+          {/* //to work on in order to prevent the default index*/}
+          {/* <NavItem>
+             
               <NavLink href="/online_store">
                 <i className="fas fa-store" />
                 Online Store
               </NavLink>
-            </NavItem>
-            <NavItem>
+            </NavItem> */}
+
+          {/* <NavItem>
+
+
+
               <NavLink href="/others_store">
                 <i className="fas fa-cloud" />
                 Others Store
               </NavLink>
             </NavItem>
-          </Nav>
+          </Nav> */}
         </Collapse>
       </Container>
     </Navbar>
