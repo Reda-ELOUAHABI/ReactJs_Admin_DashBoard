@@ -1,18 +1,15 @@
-
 const Chart = require("chart.js");
 
 var mode = "light";
- //(themeMode) ? themeMode : 'light';
+//(themeMode) ? themeMode : 'light';
 var fonts = {
   base: "Open Sans",
 };
 
-
-
 // Colors
 var colors = {
   gray: {
-//#33ff00 = greeeeeeeeen
+    //#33ff00 = greeeeeeeeen
     900: "#33ff00",
   },
   theme: {
@@ -159,12 +156,9 @@ function parseOptions(parent, options) {
   }
 }
 
-
-
 //The one Cumulative total
 // Example 1 of Chart inside src/views/Index.js (Sales value - Card)
 let chartExample1 = {
- 
   //the fill in data
   data1: (canvas) => {
     return {
@@ -173,7 +167,7 @@ let chartExample1 = {
         {
           label: "Cumulative Total",
           // data: [0, 20, 10, 30, 15, 40, 20, 60, 60],
-          data: [900, 1000,1200, 2000,1500, 1300, 1200],
+          data: [900, 1000, 1200, 2000, 1500, 1300, 1200],
         },
       ],
     };
@@ -193,7 +187,6 @@ let chartExample1 = {
 
 // Example 2 of Chart inside src/views/Index.js (Total orders - Card)
 let chartExample2 = {
-  
   data: {
     labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     datasets: [
@@ -206,9 +199,49 @@ let chartExample2 = {
   },
 };
 
+let chartExample3 = {
+  data: {
+    labels: ["Red", "Blue", "Yellow"],
+    datasets: [
+      {
+        label: "My First Dataset",
+        data: [300, 50, 100],
+        backgroundColor: [
+          "rgb(255, 99, 132)",
+          "rgb(54, 162, 235)",
+          "rgb(255, 205, 86)",
+        ],
+        hoverOffset: 4,
+      },
+    ],
+  },
+};
+const dataDoughnut = {
+  labels: ["Red", "Blue", "Yellow"],
+  datasets: [
+    {
+      label: "My First Dataset",
+      data: [300, 50, 100],
+      backgroundColor: [
+        "rgb(255, 99, 132)",
+        "rgb(54, 162, 235)",
+        "rgb(255, 205, 86)",
+      ],
+      hoverOffset: 4,
+    },
+  ],
+};
+let config = {
+  type: "doughnut",
+  data: dataDoughnut,
+};
+
 module.exports = {
   chartOptions, // used inside src/views/Index.js
   parseOptions, // used inside src/views/Index.js
   chartExample1, // used inside src/views/Index.js
-  chartExample2, // used inside src/views/Index.js
+  chartExample2, 
+  chartExample3, 
+  config,
+  dataDoughnut, // used inside src/views/Index.js
 };

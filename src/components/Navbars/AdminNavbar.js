@@ -28,11 +28,26 @@ const AdminNavbar = (props) => {
         style={{ backgroundColor: "white" }}
       >
         <Container fluid>
-          <Form className="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+          {/* //there is another searchform in the side bar : search inputID */}
+
+          <Form
+            style={{
+              position: "relative",
+              right: "480px",
+            }}
+            className="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto"
+          >
             <FormGroup className="mb-0">
               <InputGroup className="input-group-alternative">
                 <InputGroupAddon addonType="prepend">
-                  <i className="fas fa-search" />
+                  <i
+                    style={{
+                      position: "relative",
+                      bottom: "-13px",
+                      left: "10px",
+                    }}
+                    className="fas fa-search"
+                  />
                   <InputGroupText></InputGroupText>
                 </InputGroupAddon>
                 <Input
@@ -73,18 +88,15 @@ const AdminNavbar = (props) => {
                   <Media className="ml-2 d-none d-lg-block">
                     <span className="mb-0 text-sm font-weight-bold">
                       Mohammed Ali
-                      
                     </span>
-                   
-                    
                   </Media>
-                  <i class="fas fa-sort-down"></i>
-
+                  <i class="fas fa-sort-down"    style={{
+                      position: "relative",
+                      bottom :"5px",
+                      left: "20px",
+                    }}></i>
                 </Media>
-               
-
               </DropdownToggle>
-           
 
               <DropdownMenu className="dropdown-menu-arrow" right>
                 <DropdownItem className="noti-title" header tag="div">
