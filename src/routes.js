@@ -1,9 +1,7 @@
 import Index from "views/Index.js";
 
-
 // import Register from "views/examples/Register.js";
 // import Login from "views/examples/Login.js";
-
 
 import OnlineStore from "views/examples/OnlineStore";
 import OthersStore from "views/examples/OthersStore";
@@ -63,6 +61,13 @@ var routes = [
     icon: "fas fa-cloud ",
     component: OthersStore,
     layout: "/admin",
+  },
+  {
+    path: "/user ",
+    name: "User",
+    icon: "fas fa-cloud ",
+    component: OthersStore,
+    layout: "/user",
   },
 ];
 export default routes;

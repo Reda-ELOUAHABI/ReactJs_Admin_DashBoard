@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useLocation, Route, Switch, Redirect } from "react-router-dom";
 // reactstrap components
@@ -21,10 +20,16 @@ const Admin = (props) => {
   }, [location]);
 
   const getRoutes = (routes) => {
-   
-   
     return routes.map((prop, key) => {
       if (prop.layout === "/admin") {
+        return (
+          <Route
+            path={prop.layout + prop.path}
+            component={prop.component}
+            key={key}
+          />
+        );
+      } else if (prop.layout === "/user") {
         return (
           <Route
             path={prop.layout + prop.path}
@@ -43,7 +48,7 @@ const Admin = (props) => {
       if (
         props.location.pathname.indexOf(routes[i].layout + routes[i].path) !==
         -1
-      ) {
+        ) {
         return routes[i].name;
       }
     }
