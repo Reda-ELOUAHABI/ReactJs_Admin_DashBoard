@@ -83,7 +83,7 @@ const Index = (props) => {
                           data-toggle="tab"
                           href="#pablo"
                           onClick={(e) => toggleNavs(e, 2)}
-                        >
+                          >
                           <span className="d-none d-md-block">Last Week</span>
                         </NavLink>
                       </NavItem>
@@ -134,12 +134,7 @@ const Index = (props) => {
         <br />
         <br />
         <Row>
-
-
-
-
-
-
+        
           <Col className="mb-5 mb-xl-0" xl="4">
             <Card className="bg-gradient-default shadow">
               <CardHeader className="bg-transparent">
@@ -182,11 +177,6 @@ const Index = (props) => {
             </Card>
           </Col>
 
-
-
-
-
-
           <Col xl="4">
             <Card className="shadow">
               <CardHeader className="bg-transparent">
@@ -210,13 +200,6 @@ const Index = (props) => {
               </CardBody>
             </Card>
           </Col>
-
-
-
-
-
-
-
 
           <Col className="mb-5 mb-xl-0" xl="4">
             <Card className=" shadow">
