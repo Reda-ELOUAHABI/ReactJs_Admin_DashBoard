@@ -4,12 +4,12 @@ import { useLocation, Route, Switch, Redirect } from "react-router-dom";
 import { Container } from "reactstrap";
 // core components
 import UserNavbar from "components/Navbars/UserNavbar.js";
-import AdminFooter from "components/Footers/AdminFooter.js";
+import UserFooter from "components/Footers/UserFooter.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
 
-import routes from "routes.js";
+import routes from "routesUser.js";
 
-const Admin = (props) => {
+const User = (props) => {
   const mainContent = React.useRef(null);
   const location = useLocation();
 
@@ -21,7 +21,7 @@ const Admin = (props) => {
 
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {
-      if (prop.layout === "/admin") {
+      if (prop.layout === "/user") {
         return (
           <Route
             path={prop.layout + prop.path}
@@ -48,7 +48,7 @@ const Admin = (props) => {
       if (
         props.location.pathname.indexOf(routes[i].layout + routes[i].path) !==
         -1
-        ) {
+      ) {
         return routes[i].name;
       }
     }
@@ -61,7 +61,7 @@ const Admin = (props) => {
         {...props}
         routes={routes}
         logo={{
-          innerLink: "/admin/index",
+          innerLink: "/user/index",
           imgSrc: require("../assets/img/brand/argon-react.png").default,
           imgAlt: "...",
         }}
@@ -73,14 +73,14 @@ const Admin = (props) => {
         />
         <Switch>
           {getRoutes(routes)}
-          <Redirect from="*" to="/admin/index" />
+          <Redirect from="*" to="/user/index" />
         </Switch>
         <Container fluid>
-          <AdminFooter />
+          <UserFooter />
         </Container>
       </div>
     </>
   );
 };
 
-export default Admin;
+export default User;

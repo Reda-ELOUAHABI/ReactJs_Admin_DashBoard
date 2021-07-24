@@ -7,12 +7,15 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "assets/scss/argon-dashboard-react.scss";
 
 import AdminLayout from "layouts/Admin.js";
-//import AuthLayout from "layouts/Auth.js";
+import UserLayout from "layouts/User.js";
+//import AuthLayout from "layouts/Auth.js";  
+//https://github1s.com/creativetimofficial/argon-dashboard-react
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
+      <Route path="/user" render={(props) => <UserLayout {...props} />} />
 
       <Redirect from="/" to="/admin/index" />
     </Switch>

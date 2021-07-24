@@ -27,7 +27,7 @@ import {
   chartExample2,
   chartExample3,
   config,
- dataDoughnut
+  dataDoughnut
 } from "variables/charts.js";
 
 import Header from "components/Headers/Header.js";
@@ -244,7 +244,6 @@ const Index = (props) => {
                   </div>
                 </Row>
               </CardHeader>
-
               <CardBody>
                 {/* Chart */}
                 <div className="chart">

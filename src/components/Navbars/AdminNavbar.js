@@ -30,7 +30,6 @@ const AdminNavbar = (props) => {
       >
         <Container fluid>
           {/* //there is another searchform in the side bar : search inputID */}
-
           <Form
             style={{
               position: "relative",
@@ -62,12 +61,10 @@ const AdminNavbar = (props) => {
               </InputGroup>
             </FormGroup>
           </Form>
-
           <a className="test">
             <i class="fas fa-layer-group"></i>
             <span class="num1">2</span>
           </a>
-
           {/* <button className="btn "> */}
           {/* <i class="fas fa-check-circle"></i> */}
           <a className="test">
@@ -79,12 +76,10 @@ const AdminNavbar = (props) => {
               
             </a> */}
           {/* </button> */}
-
           <a className="test">
             <i class="fas fa-shopping-cart fa-shopping-cart1"></i>
             <span class="num3">2</span>
           </a>
-
           <Nav className="align-items-center d-none d-md-flex" navbar>
             <UncontrolledDropdown nav>
               <DropdownToggle className="pr-0" nav>
@@ -94,6 +89,7 @@ const AdminNavbar = (props) => {
                       alt="..."
                       //user profile img hosted
                       src="https://i.ibb.co/zNBr3SD/Screenshot-2021-07-14-234407.png"
+                      //src="../../assets/My-Images/profile.png"
                     />
                   </span>
                   <Media className="ml-2 d-none d-lg-block">
@@ -104,7 +100,6 @@ const AdminNavbar = (props) => {
                   <i className="fas fa-sort-down" style={{}}></i>
                 </Media>
               </DropdownToggle>
-
               <DropdownMenu className="dropdown-menu-arrow" right>
                 <DropdownItem className="noti-title" header tag="div">
                   <h6 className="text-overflow m-0">Welcome!</h6>
