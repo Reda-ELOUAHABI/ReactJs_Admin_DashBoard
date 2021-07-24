@@ -1,5 +1,5 @@
 import React from "react";
-
+import profile from "../../assets/My-Images/profile.png";
 // reactstrap components
 import {
   Badge,
@@ -50,7 +50,9 @@ const Analytics = () => {
               style={{
                 backgroundImage:
                   "url(" +
-                  "https://image.freepik.com/free-vector/gradient-network-connection-background_23-2148865392.jpg" +
+                  // "https://image.freepik.com/free-vector/gradient-network-connection-background_23-2148865392.jpg" +
+
+                  "https://image.freepik.com/free-vector/dots-connection-lines-digital-background_23-2148821703.jpg" +
                   ")",
                 height: "444px ",
               }}
@@ -76,59 +78,91 @@ const Analytics = () => {
                   "url(" +
                   "https://image.freepik.com/free-vector/global-network-futuristic-technology_53876-97389.jpg" +
                   ")",
-               // height: "70px",
+                // height: "70px",
                 top: "0",
                 backgroundSize: "800px",
                 backgroundRepeat: "no-repeat",
-                height: "10px"
+                height: "10px",
+              }}
+            ></a>
+            <a
+              class="caard-description"
+              href="/#"
+              target="_blank"
+              style={{
+                height: "187px",
               }}
             >
-
-            </a>
-            <a class="caard-description" href="/#" target="_blank"
-            style={{
-              height: "187px"
-            }}>
               <h2>Customise your own design</h2>
-              <p 
-              style={{ color: "black"  }}
-              >
+              <p style={{ color: "black" }}>
                 Choose your own lqn akjna akna kann s aokqk aqkqk kqkna nso
               </p>
               <h3>Store Design</h3>
             </a>
           </li>
 
-          <li class="caard caard3">
+          <li
+            class="caard caard3"
+            style={{
+              backgroundColor: "white",
+            }}
+          >
             <a
               class="caard-image3 image_profile"
               href="/#"
               target="_blank"
               style={{
-                backgroundImage:
-                  "url(" +
-                  "https://image.freepik.com/free-photo/medium-shot-happy-man-smiling_23-2148221808.jpg" +
-                  ")",
-               // height: "70px",
+                // backgroundImage:
+                //   "url(" +
+                //   "https://image.freepik.com/free-photo/medium-shot-happy-man-smiling_23-2148221808.jpg" +
+                //   ")",
+                // height: "70px",
                 top: "0",
+                // backgroundColor: "white",
                 backgroundSize: "200px",
+                borderRadius: "25px",
                 backgroundRepeat: "no-repeat",
-                height: "10px"
+                height: "10px",
               }}
             >
-
+              <div className="wrapper">
+                <img src={profile} alt="profile" />
+              </div>
+              <div>
+                <p
+                  style={{
+                    color: "black",
+                    position: "relative",
+                    left: "15px",
+                    top: "-90px",
+                    fontWeight: "900",
+                  }}
+                >
+                  My Own Profile
+                </p>
+              </div>
             </a>
-            <a class="caard-description" href="/#" target="_blank"
-            style={{
-              height: "187px"
-            }}>
-              <h2>Customise your own design</h2>
-              <p 
-              style={{ color: "black"  }}
+
+            <a
+              class="caard-description"
+              href="/#"
+              target="_blank"
+              style={{
+                height: "187px",
+                position: "relative",
+                top: "80px",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-around",
+                  borderRadius: "60%",
+                }}
               >
-                Choose your own lqn akjna akna kann s aokqk aqkqk kqkna nso
-              </p>
-              <h3>Store Design</h3>
+                <button className="CancelBtn">Cancel</button>
+                <button className="PlansBtn">Plans</button>
+              </div>
             </a>
           </li>
         </ul>
