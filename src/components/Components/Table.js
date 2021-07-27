@@ -24,6 +24,8 @@ import {
 } from "reactstrap";
 
 //https://codepen.io/chryss/pen/rbZxwa : just search filter on opencode
+
+//todo: change also those titles format
 function TableProducts() {
   return (
     <div>
@@ -42,6 +44,8 @@ function TableProducts() {
         <tbody>
           <tr>
             <th>
+              {/* add style to checkbox   https://stackoverflow.com/questions/4148499/how-to-style-a-checkbox-using-css
+               */}
               <input type="checkbox" />{" "}
             </th>
             <th scope="row">
