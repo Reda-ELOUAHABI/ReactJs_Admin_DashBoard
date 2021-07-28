@@ -26,7 +26,7 @@ import {
 // core components
 import Header from "components/Headers/Header.js";
 import TableProducts from "components/Components/Table";
-
+import "./styleProductsUser.css"
 const MapWrapper = () => {
   return (
     <>
@@ -42,47 +42,60 @@ const Products = () => {
     <>
       <Header />
       <Container className="mt--7" fluid>
-     
         {/* Table */}
         <Row>
-
           <div className="col">
             <h3 className="mb-0">Products</h3>
             <p>
-          import | export | More Actions
-        </p>
-        <button  
-        style={{
-          position: "relative",
-          bottom: "60px",
-          left: "1350px" 
-        }}
-        > Add Products</button>
+              <i class="fas fa-long-arrow-alt-down"></i> import{" "}
+              <i class="fas fa-long-arrow-alt-up"></i> export More Actions{" "}
+              <i class="fas fa-sort-down"></i>
+            </p>
+            <button className="AddProductBTN"
+            >
+              {" "}
+              Add Products
+            </button>
             <Card className="shadow">
-            <h1>ALL</h1>
-            <hr />
-            <div class="container small my-5">
-    <div class="row d-flex justify-content-between mx-auto mt-4 mb-3">
-        <div class="col-lg-8 col-md-12">
-            <div class="row justify-content-end">
-                <div class="input-group col-lg-10 col-md-12">
-                <div class="input-group-append"><select class="form-control bg-light rounded-0 text-capitalize" id="search-filter" name="search-filter">
+              <h1 className="ALL"
+              >ALL </h1>
+              <hr />
+              <div class="container small my-5">
+                <div class="row d-flex justify-content-between mx-auto mt-4 mb-3">
+                  <div class="col-lg-8 col-md-12">
+                    <div class="row justify-content-end">
+                      <div class="input-group col-lg-10 col-md-12 SearchProducts">
+                        <div class="input-group-append">
+                          <select
+                            class="form-control rounded-0 text-capitalize"
+                            id="search-filter"
+                            name="search-filter"
+                          >
                             <option value="listitem">Filter</option>
                             <option value="Type">Type</option>
                             <option value="Vendor">Vendor</option>
-                        </select></div>
-                    <div class="input-group-prepend">
-                   <i class="fa fa-search" aria-hidden="true"></i></div>
-                    <input class="form-control" id="search-box" type="text" name="search" placeholder="Search for... " required="required" />
+                          </select>
+                        </div>
+                        <div class="input-group-prepend ">
+                          <i class="fa fa-search" aria-hidden="true" ></i>
+                        <input
+                          class="form-control"
+                          id="search-box"
+                          type="text"
+                          name="search"
+                          placeholder="Search Products "
+                          required="required"
+                        />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    </div>
+              </div>
               {/* TableProducts */}
               <TableProducts />
               <CardFooter className="py-4">
-                <nav aria-label="...">
+                {/* <nav aria-label="...">
                   <Pagination
                     className="pagination justify-content-end mb-0"
                     listClassName="justify-content-end mb-0"
@@ -132,6 +145,7 @@ const Products = () => {
                     </PaginationItem>
                   </Pagination>
                 </nav>
+              */}
               </CardFooter>
             </Card>
           </div>

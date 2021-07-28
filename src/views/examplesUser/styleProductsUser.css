@@ -1,0 +1,28 @@
+/* https://glitch.com/~convert-css-js
+react js object to css and inverse tool */
+
+.ALL {
+  position: relative;
+  left: 10px;
+  text-decoration: underline blue;
+  text-underline-offset: 10px;
+}
+hr {
+  position: relative;
+  bottom: 40px;
+}
+.AddProductBTN {
+  position: relative;
+  bottom: 60px;
+  left: 1050px;
+}
+/* .SearchProducts{
+width: 1000px;
+} */
+.SearchProductsIcon {
+  position: inherit;
+  bottom: -10px;
+}
+#search-box {
+  width: 400px;
+}

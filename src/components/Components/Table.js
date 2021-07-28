@@ -30,15 +30,18 @@ function TableProducts() {
   return (
     <div>
       <Table className="align-items-center table-flush" responsive>
-        <thead className="thead-light">
+        <thead>
           <tr>
             <th>
               <input type="checkbox" />
             </th>
-            <th scope="col">Products</th>
-            <th scope="col">Inverntory</th>
-            <th scope="col">Type</th>
-            <th scope="col">Vendor</th>
+            <th scope="col"><h1>
+              Products <i class="fas fa-sort-down"></i>
+            </h1>
+   </th>
+            <th scope="col"><h1>Inverntory</h1></th>
+            <th scope="col"><h1>Type</h1></th>
+            <th scope="col"><h1>Vendor</h1></th>
           </tr>
         </thead>
         <tbody>
