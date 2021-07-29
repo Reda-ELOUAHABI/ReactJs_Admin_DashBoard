@@ -57,7 +57,7 @@ const UserSidebar = (props) => {
     // 10 for extra routes as the max of routes
     //todo L le lien de profile ne marche pas , il faut peut etre daire enteer le rooter
     routes1 = routes.slice(5, 5);
-    routes = routes.slice(0, 5);
+    routes = routes.slice(1, 5);
     // console.log(routes);
     // console.log("\n");
     // console.log(routes1);
