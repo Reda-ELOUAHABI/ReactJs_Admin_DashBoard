@@ -9,6 +9,7 @@ import Orders from "views/examples/Orders";
 import Products from "views/examples/Products";
 import Customers from "views/examples/Customers";
 import Analytics from "views/examples/Analytics";
+import ProfileUser from "views/ProfileUser";
 
 var routes = [
   {
@@ -63,13 +64,21 @@ var routes = [
     layout: "/admin",
   },
   {
-    path: "/user ",
+    path: "/index ",
     name: "User",
     icon: "fas fa-cloud ",
     component: OthersStore,
     layout: "/user",
   },
-];
+  {
+    path: "/profile ",
+    name: "User",
+    icon: "fas fa-cloud ",
+    component: ProfileUser,
+    layout: "/user",
+  },
+]
+;
 export default routes;
 
 // {

@@ -51,11 +51,12 @@ const UserSidebar = (props) => {
   };
   // creates the links that appear in the left menu / Sidebar
 
-  let routes1 =[];
+  let routes1 = [];
   const createLinks = (routes) => {
     //devide the router array into 2 differents links devisions as they asked
     // 10 for extra routes as the max of routes
-    routes1 = routes.slice(5, 10);
+    //todo L le lien de profile ne marche pas , il faut peut etre daire enteer le rooter
+    routes1 = routes.slice(5, 5);
     routes = routes.slice(0, 5);
     // console.log(routes);
     // console.log("\n");
@@ -165,23 +166,30 @@ const UserSidebar = (props) => {
                 </span>
               </Media>
             </DropdownToggle>
-            <DropdownMenu className="dropdown-menu-arrow" right>
+            {/* <DropdownMenu className="dropdown-menu-arrow" right>
               <DropdownItem className="noti-title" header tag="div">
                 <h6 className="text-overflow m-0">Welcome!</h6>
               </DropdownItem>
-              <DropdownItem to="/admin/user-profile" tag={Link}>
+              <DropdownItem to="/user/user-profile" tag={Link}>
+              <Link to={{pathname: '../../views/ProfileUser.js'}}> 
+          
+
                 <i className="ni ni-single-02" />
-                <span>My profile</span>
+                  My profile
+                </Link>
+                <span>
+                
+                </span>
               </DropdownItem>
-              <DropdownItem to="/admin/user-profile" tag={Link}>
+              <DropdownItem to="/user/user-profile" tag={Link}>
                 <i className="ni ni-settings-gear-65" />
                 <span>Settings</span>
               </DropdownItem>
-              <DropdownItem to="/admin/user-profile" tag={Link}>
+              <DropdownItem to="/user/user-profile" tag={Link}>
                 <i className="ni ni-calendar-grid-58" />
                 <span>Activity</span>
               </DropdownItem>
-              <DropdownItem to="/admin/user-profile" tag={Link}>
+              <DropdownItem to="/user/user-profile" tag={Link}>
                 <i className="ni ni-support-16" />
                 <span>Support</span>
               </DropdownItem>
@@ -191,6 +199,7 @@ const UserSidebar = (props) => {
                 <span>Logout</span>
               </DropdownItem>
             </DropdownMenu>
+          */}
           </UncontrolledDropdown>
         </Nav>
         {/* Collapse */}
@@ -247,7 +256,6 @@ const UserSidebar = (props) => {
           {/* Navigation */}
 
           <Nav navbar>{createLinks1()}</Nav>
-
         </Collapse>
       </Container>
     </Navbar>

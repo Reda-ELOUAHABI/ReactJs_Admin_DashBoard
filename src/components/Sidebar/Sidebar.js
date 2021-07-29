@@ -51,7 +51,7 @@ const Sidebar = (props) => {
   };
   // creates the links that appear in the left menu / Sidebar
 
-  let routes1 =[];
+  let routes1 = [];
   const createLinks = (routes) => {
     //devide the router array into 2 differents links devisions as they asked
     // 10 for extra routes as the max of routes
@@ -165,13 +165,16 @@ const Sidebar = (props) => {
                 </span>
               </Media>
             </DropdownToggle>
-            <DropdownMenu className="dropdown-menu-arrow" right>
+            {/* <DropdownMenu className="dropdown-menu-arrow" right>
               <DropdownItem className="noti-title" header tag="div">
                 <h6 className="text-overflow m-0">Welcome!</h6>
               </DropdownItem>
               <DropdownItem to="/admin/user-profile" tag={Link}>
                 <i className="ni ni-single-02" />
-                <span>My profile</span>
+               
+                <span>
+                 <Route path="/admin/user-profile" component={ProfileUser} /> 
+                 My profile</span>
               </DropdownItem>
               <DropdownItem to="/admin/user-profile" tag={Link}>
                 <i className="ni ni-settings-gear-65" />
@@ -191,6 +194,7 @@ const Sidebar = (props) => {
                 <span>Logout</span>
               </DropdownItem>
             </DropdownMenu>
+          */}
           </UncontrolledDropdown>
         </Nav>
         {/* Collapse */}

@@ -26,7 +26,7 @@ import {
 // core components
 import Header from "components/Headers/Header.js";
 import TableProducts from "components/Components/Table";
-import "./styleProductsUser.css"
+import "./styleProductsUser.css";
 const MapWrapper = () => {
   return (
     <>
@@ -47,23 +47,26 @@ const Products = () => {
           <div className="col">
             <h3 className="mb-0">Products</h3>
             <p>
-              <i class="fas fa-long-arrow-alt-down"></i> import{" "}
-              <i class="fas fa-long-arrow-alt-up"></i> export More Actions{" "}
-              <i class="fas fa-sort-down"></i>
+              <i class="fas fa-long-arrow-alt-down"></i> import &nbsp;{" "}
+              <i class="fas fa-long-arrow-alt-up"></i> export &nbsp; 
+              More Actions <i class="fas fa-sort-down"></i>
             </p>
-            <button className="AddProductBTN"
-            >
-              {" "}
-              Add Products
-            </button>
+            <button className="AddProductBTN"> Add Products</button>
             <Card className="shadow">
-              <h1 className="ALL"
-              >ALL </h1>
+              <h1 className="ALL">ALL </h1>
               <hr />
-              <div class="container small my-5">
-                <div class="row d-flex justify-content-between mx-auto mt-4 mb-3">
-                  <div class="col-lg-8 col-md-12">
+              {/* <div class="container small my-5"> */}
+              <div>
+                <div>
+                  {/* <div class="row d-flex justify-content-between mx-auto mt-4 mb-3"> */}
+                  <div id="Filter-Serach">
+                    {/* <div class="col-lg-8 col-md-12"> */}
                     <div class="row justify-content-end">
+                      <i
+                        class="fa fa-search"
+                        id="iconSearch"
+                        aria-hidden="true"
+                      ></i>
                       <div class="input-group col-lg-10 col-md-12 SearchProducts">
                         <div class="input-group-append">
                           <select
@@ -76,16 +79,17 @@ const Products = () => {
                             <option value="Vendor">Vendor</option>
                           </select>
                         </div>
+
                         <div class="input-group-prepend ">
-                          <i class="fa fa-search" aria-hidden="true" ></i>
-                        <input
-                          class="form-control"
-                          id="search-box"
-                          type="text"
-                          name="search"
-                          placeholder="Search Products "
-                          required="required"
-                        />
+                          {/* <i class="fa fa-search" aria-hidden="true" ></i> */}
+                          <input
+                            class="form-control"
+                            id="search-box"
+                            type="text"
+                            name="search"
+                            placeholder="Search Products "
+                            required="required"
+                          />
                         </div>
                       </div>
                     </div>
