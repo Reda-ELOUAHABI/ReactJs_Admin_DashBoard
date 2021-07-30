@@ -136,7 +136,6 @@ li.caard2 h3 {
 .caard-description>p {
 	margin: 0;
 }
-
 .image_profile {
 
 
@@ -178,25 +177,25 @@ li.caard2 h3 {
 
 
 
-}
+	}
 
-
-.wrapper img {
+  
+  .wrapper img {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
 	width: 100%;
-	border-radius: 50%;
+    border-radius: 50%;
 
 	vertical-align: middle;
-	border-style: none;
-}
+    border-style: none;
+  }
 
 
 
-.CancelBtn {
-	/*
+  .CancelBtn{
+	  /*
 	   width: "120px",
               height: "40px",
              borderRadius: "10%",
@@ -208,27 +207,27 @@ li.caard2 h3 {
              color: "grey" 
 	  */
 	width: 130px;
-	height: 40px;
-	//border-radius:20%;
-	border-radius: 100px / 190px;
-	//    position:inherit;
-	//    left:1100px;
-	//    top: 1100px;
-	background-Color: white;
-	border-Style: none;
-	font-Weight: bolder;
-	color: grey;
-}
-
-.PlansBtn {
+	height:40px;
+   //border-radius:20%;
+   border-radius:  100px / 190px;
+//    position:inherit;
+//    left:1100px;
+//    top: 1100px;
+   background-Color: white;
+   border-Style: none;
+   font-Weight: bolder;
+   color: grey;
+  }
+  .PlansBtn{
 	width: 130px;
-	height: 40px;
-	//border-radius:20%;
-	border-radius: 100px / 190px;
-	//    position:inherit;
-	//    left:100px;
-	background-Color: rgb(0, 0, 0);
-	border-Style: none;
-	font-Weight: bolder;
-	color: rgb(255, 255, 255);
-}
+	height:40px;
+   //border-radius:20%;
+   border-radius:  100px / 190px;
+//    position:inherit;
+//    left:100px;
+   background-Color: rgb(0, 0, 0);
+   border-Style: none;
+   font-Weight: bolder;
+   color: rgb(255, 255, 255);
+  }
+  

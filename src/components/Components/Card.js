@@ -28,7 +28,7 @@ function Caard() {
     "https://image.freepik.com/free-vector/gradient-network-connection-background_23-2148865392.jpg";
   return (
     <div>
-      <li className="caard">
+      <li className="caardorder">
         <div>
           <i class="iconHeart fas fa-heart"></i>
           <div className="CercleImg">

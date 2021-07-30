@@ -22,7 +22,7 @@ import {
 } from "reactstrap";
 // core components
 import Header from "components/Headers/Header.js";
-import "./style_orders.scss";
+import "./style.scss";
 //import Image "../..";
 const Analytics = () => {
   return (
@@ -31,6 +31,19 @@ const Analytics = () => {
       {/* Page content */}
       <Container className="mt--7" fluid>
         {/* Table */}
+        {/* <Row>
+          <div className="col">
+            <Card className="shadow">
+              <CardHeader className="border-0">
+                <h3 className="mb-0">Card Analytics User</h3>
+              </CardHeader>
+            </Card>
+          </div>
+        </Row> */}
+<br />
+<div style={{
+  margin: "100px"
+}}></div>
         <ul className="caard-list">
           <li className="caard caard1">
             <a
@@ -156,9 +169,7 @@ const Analytics = () => {
             </a>
           </li>
         </ul>
-      
       </Container>
-    
     </>
   );
 };
