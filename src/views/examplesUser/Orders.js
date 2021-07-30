@@ -35,6 +35,7 @@ import "./style_orders.scss";
 import Caard from "components/Components/Card";
 
 import MyCarousel from "components/Components/MyCarousel";
+import CardSpecial from "./CardSpecial";
 
 
 const Orders = () => {
@@ -55,26 +56,7 @@ const Orders = () => {
             </Card>
           </div>
         </Row> */}
-        <div>
-          <li className="caardspecial"
-            style={{
-              backgroundColor: "blue",
-              position: "absolute",
-              right: "10px",
-              top: "100px",
-              height: "400px",
-              width: "270px",
-            }}
-          >
-            {/* <a
-                    className="caard-image"
-                    href="/#"
-                    target="_blank"
-                ></a>
-                 */}
-            <p>hello</p>
-          </li>
-        </div>
+        <CardSpecial />
         <h1 className="YourProducts">
           Your Products
         </h1>

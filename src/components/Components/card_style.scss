@@ -16,42 +16,8 @@
 	position: relative;
 	right: 90px;
 	bottom: 95px;
+
 }
-
-
-
-.caard-image {
-	// it doesn't work here
-		display: block;
-	// min-height: 15rem;
-	/* layout hack */
-	background: #fff center center no-repeat;
-	//background-image: url("https://image.freepik.com/free-vector/gradient-network-connection-background_23-2148865392.jpg");
-	background-size: cover;
-	//filter: blur(3px); 
-	/* blur the lowres image */
-}
-
-
-
-
-.caard-image.is-loaded {
-	filter: none;
-	/* remove the blur on fullres image */
-	transition: filter 1s;
-}
-
-
-
-
-/* Layout Styles */
-// html, body {
-// 	width: 100%;
-// 	height: 100%;
-// 	margin: 0;
-// 	font-size: 16px;
-// 	font-family: sans-serif;
-// }
 
 .caard-list {
 	display: block;
@@ -64,25 +30,9 @@
 	left: -60px;
 }
 
-
 .caard:hover {
 	transform: translateY(-0.5rem) scale(1.0125);
 	box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
-}
-
-.caard-description {
-	display: block;
-	padding: 1px 1px;
-	color: #ffffff;
-	text-decoration: none;
-}
-
-.caard-description>h2 {
-	margin: 0 0 0.5em;
-}
-
-.caard-description>p {
-	margin: 0;
 }
 
 .image_profile {
@@ -100,84 +50,147 @@
 }
 
 
-.wrapper {
-	//width:70px;
-	//height:70px;
-	margin: 25px auto;
-	overflow: hidden;
-	//border-radius:50%;
+.iconHeart{
 	position: relative;
-	left: -100px;
-	width: 36px;
-	height: 36px;
-	font-size: 0.875rem;
-	color: #fff;
-	background-color: #adb5bd;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 1rem;
-	border-radius: 50%;
-	height: 48px;
-	width: 48px;
-	border-radius: 50% !important;
-
-
-
-
-
+	top: 10px;
+	left: 70px;
+	z-index: 1;
 }
 
 
-.wrapper img {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-	border-radius: 50%;
-
-	vertical-align: middle;
-	border-style: none;
+.CercleImg {
+    width: 120px;
+    height: 110px;
+    border-radius: 99%;
+    border: 1px solid transparent;
+    background-size: 100% 100%, 50% 50%, 70% 70%, 50% 76%, 50% 50%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(white, white), linear-gradient(
+30deg
+, #311717 0%, #fbfbfb 0%), linear-gradient(
+160deg
+, #383807 86%, white 30%), linear-gradient(
+300deg
+, #0b0b36 96%, white 30%), linear-gradient(
+210deg
+, #0b3d0b 0%, white 0%);
+    background-position: center center, left top, right top, left bottom, right bottom;
+    background-origin: content-box, border-box, border-box, border-box, border-box;
+    background-clip: padding-box, border-box, border-box, border-box, padding-box;
+    -webkit-transform: rotate(
+30deg
+);
+    transform: rotate(
+344deg
+);
+position: relative;
+left: 40px;
 }
 
+  .ImageCard{
+	//margin-top: 20px ;
+	height: 100px ;
+	width: 100px;
+	//z-index: 100;
 
+}
+p{
+	margin-top: 0;
+	padding-top: 0;
+	margin-bottom: 50px;
+}
+h3{
+	margin-bottom: -5px;
+}
+.hr {
+    /* margin-top: 2rem; */
+    /* margin-bottom: 2rem; */
+    /* border: 0; */
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+	position: relative;
+	margin-top: -40px;
+}
+button{
+	position: relative;
+	top: 10px;
+	z-index: 12;
+	background-color: transparent;
+	border: none;
+	width: calc(100% - 0px);
+	height: calc(100% - 0px);
+	margin-bottom: 100px;
+	// display:flex;
+    // flex-grow:1;
 
-.CancelBtn {
-	/*
-	   width: "120px",
-              height: "40px",
-             borderRadius: "10%",
-             position: "inherit",
-             left: "100px",
-             backgroundColor: "white",
-             borderStyle: "none",
-             fontWeight: "bolder",
-             color: "grey" 
-	  */
-	width: 130px;
-	height: 40px;
-	//border-radius:20%;
-	border-radius: 100px / 190px;
-	//    position:inherit;
-	//    left:1100px;
-	//    top: 1100px;
-	background-Color: rgb(240, 240, 240);
-	border-Style: none;
-	font-Weight: bolder;
-	color: grey;
+	// float: none;
+	// overflow: hidden;
+}
+// .button{
+// 	// float: none;
+// 	// overflow: hidden;
+// 	// display:flex;
+//     // flex-grow:1;
+// }
+// button:hover{
+// 	position: relative;
+// 	top: 10px;
+// 	z-index: 12;
+// 	background-color: rgb(55, 145, 77);
+// 	border: none;
+// 	width: calc(100% - 0px);
+// 	height: calc(100% - 0px);
+// 	margin-bottom: 100px;
+// }
+.w3-rest:hover{
+	position: relative;
+	top: 10px;
+	z-index: 12;
+	background-color: rgb(109, 95, 236) !important;
+	border: none;
+	width: calc(100% - 0px) !important;
+	height: calc(100% - 0px) !important;
+	margin-bottom: 100px !important;
+	margin-top: -10px !important;
 }
 
-.PlansBtn {
-	width: 130px;
-	height: 40px;
-	//border-radius:20%;
-	border-radius: 100px / 190px;
-	//    position:inherit;
-	//    left:100px;
-	background-Color: rgb(0, 0, 0);
-	border-Style: none;
-	font-Weight: bolder;
-	color: rgb(255, 255, 255);
-	margin-right: 5px;
+// Card Special : at the right
+
+.caardspecial{
+	background-color: white;
+position: absolute;
+left: 870px;
+top: 100px;
+height: 400px;
+width: 270px
+}
+.MyPlugins{
+	display: flex;
+	flex-direction: row;
+	order: 5;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.fa-plus-circle{
+	font-size: 20px;
+	color: rgb(96, 99, 230);
+	position:relative;
+	left: 230px;
+	top: -30px;
+
+
+}
+// the same as hr class
+.separatorLine{
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	position: relative;
+	margin-top: -20px;
+}
+.ImagePlugins{
+	margin: 10px;
+}
+.container{
+	display: flex;
+	flex-direction: row !important;
+	position: relative;
+	
 }
