@@ -54,7 +54,7 @@ const Products = () => {
             <button className="AddProductBTN"> Add Products</button>
             <Card className="shadow">
               <h1 className="ALL">ALL </h1>
-              <hr />
+              <hr className="hr" />
               {/* <div class="container small my-5"> */}
               <div>
                 <div>

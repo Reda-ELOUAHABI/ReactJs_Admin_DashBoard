@@ -14,7 +14,7 @@
 	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
 	// //position the caard
 	position: relative;
-	right: 90px;
+	right: -40px;
 	bottom: 95px;
 
 }
@@ -154,15 +154,25 @@ button{
 }
 
 // Card Special : at the right
-
+.CardSpecialContainer{
+	
+}
 .caardspecial{
 	background-color: white;
 position: absolute;
 left: 870px;
 top: 100px;
-height: 400px;
+height: 440px;
 width: 270px
 }
+.RowPluging{
+	display: flex;
+width: 100%;
+margin: 0 auto;
+justify-content: space-around;
+//align-items: center;
+}
+
 .MyPlugins{
 	display: flex;
 	flex-direction: row;
@@ -193,4 +203,41 @@ width: 270px
 	flex-direction: row !important;
 	position: relative;
 	
+}
+.cloudIdea{
+	height: 20px;
+	width: 60px;
+	background-color: rgb(247, 198, 108);
+	position: relative;
+	top: 20px;
+	border-radius: 5px;
+
+}
+.trianglecloud{
+	width: 0;
+height: 0;
+border:5px solid transparent;
+border-left: 15px solid rgb(247, 198, 108);
+margin-left: 35px;
+position: relative;
+top: 5px;
+left: -47px;
+transform: rotate(180deg);
+}
+.inProgress{
+	font-size: 10px;
+	position: relative;
+	top: -10px;
+	left: 6px;
+}
+.plugingTitle{
+	padding-top: 10px;
+}
+.plugingTitle> p{
+	padding-top: -7px;
+	font-size: 10px;
+}
+.plugingTitle> h4{
+	margin-bottom: -4px;
+
 }

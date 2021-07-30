@@ -7,7 +7,7 @@ react js object to css and inverse tool */
   text-decoration: underline blue;
   text-underline-offset: 10px;
 }
-hr {
+.hr {
   position: relative;
   bottom: 40px;
 }
