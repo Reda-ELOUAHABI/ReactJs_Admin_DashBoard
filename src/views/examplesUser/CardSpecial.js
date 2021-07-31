@@ -3,7 +3,7 @@ import React from "react";
 
 function CardSpecial() {
   return (
-    <div className="CardSpecialContainer">
+    <div >
       <div className="caardspecial">
       {/* I could remove container class */}
         <h1 className="MyPlugins container">My Plugins</h1>
@@ -20,6 +20,10 @@ function CardSpecial() {
         <PluginsCompo />
         <div className="separatorLine"></div>
         <PluginsCompo />
+        <div className="footerCard">
+<p className="viewALl"> View All</p>
+<p className="first16">first 6 of 16</p>
+        </div>
       </div>
     </div>
   );

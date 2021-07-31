@@ -1,4 +1,4 @@
-import Index from "views/Index.js";
+import Index from "views/examplesUser/IndexUser";
 
 // import Register from "views/examples/Register.js";
 // import Login from "views/examples/Login.js";
@@ -65,7 +65,7 @@ var routes = [
   {
     path: "/index ",
     name: "Admin",
-    icon: "fas fa-cloud ",
+    icon: "fas fa-user-shield ",
     component: OthersStore,
     layout: "/admin",
   },

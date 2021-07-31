@@ -66,17 +66,17 @@ var routes = [
   {
     path: "/index ",
     name: "User",
-    icon: "fas fa-cloud ",
+    icon: "fas fa-users ",
     component: OthersStore,
     layout: "/user",
   },
-  {
-    path: "/profile ",
-    name: "User",
-    icon: "fas fa-cloud ",
-    component: ProfileUser,
-    layout: "/user",
-  },
+  // {
+  //   path: "/profile ",
+  //   name: "User",
+  //   icon: "fas fa-cloud ",
+  //   component: ProfileUser,
+  //   layout: "/user",
+  // },
 ]
 ;
 export default routes;

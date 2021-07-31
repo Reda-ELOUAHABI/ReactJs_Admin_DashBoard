@@ -154,18 +154,17 @@ button{
 }
 
 // Card Special : at the right
-.CardSpecialContainer{
-	
-}
+
 .caardspecial{
 	background-color: white;
 position: absolute;
 left: 870px;
 top: 100px;
 height: 440px;
-width: 270px
+width: 270px;
 }
 .RowPluging{
+	// Set the horizontaly flex
 	display: flex;
 width: 100%;
 margin: 0 auto;
@@ -240,4 +239,29 @@ transform: rotate(180deg);
 .plugingTitle> h4{
 	margin-bottom: -4px;
 
+}
+
+.footerCard{
+	background-color: #ececf3;
+	height: 40px;
+	width: 270px;
+	position: relative;
+//	left: 870px;
+	top: -10px;
+	border-radius:  0px 0px 7px 7px;
+	z-index: -2;
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	justify-content: space-around;
+	padding-top: 10px;
+}
+.viewALl{
+	color: rgb(105, 105, 230);
+	font-size: 13px;
+	font-weight: 400;
+}
+.first16{
+padding-top: 7px;
+	font-size: 10px;
 }
