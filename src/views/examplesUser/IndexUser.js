@@ -246,7 +246,7 @@ function IndexUser() {
                                         </div>
                                         <div className="VerticalOne">
                                             <p>Set up the Store</p>
-                                            <button className="btnflexCards bg primary"> click me</button>
+                                            <button className="btnflexCards bg-primary"> click me</button>
                                         </div>
                                     </CardHeader>
                                 </Card>
@@ -261,7 +261,7 @@ function IndexUser() {
                                         <div className="HorizentalOne">
                                             <h1>Set up the Store</h1>
                                             <button className="btnflexCards bg-danger"> click me</button>
-                                            <img src={Image4} alt="image4" />
+                                            <img src={Image4} alt="image5" />
                                         </div>
                                         <div className="VerticalOne">
                                             <p>Set up the Store</p>

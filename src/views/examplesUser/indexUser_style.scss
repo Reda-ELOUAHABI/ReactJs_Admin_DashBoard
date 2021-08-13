@@ -104,7 +104,7 @@ text-align: left
 }
 // Items
 .flexCard11{
-flex: 1.7;
+flex: 1.5;
 }
 .flexCard12{
 flex: 1;
@@ -119,8 +119,9 @@ margin-left: 10px;
 }
 // Items
 .flexCard22{
-flex: 1.7;
+flex: 1.5;
 margin-left: 10px;
+margin-bottom: 0px;
 }
 .flexCard21{
 flex: 1;
@@ -144,7 +145,10 @@ flex: 1;
     width: 90px;
     height: auto;
 }
-
+// img.flexCard22 {
+//     width: 7px;
+//     height: auto;  
+// }
 .VerticalOne{
     display: flex;
     flex-direction: column;
@@ -155,7 +159,10 @@ flex: 1;
 
 }
 .VerticalOne >button{
-    margin-top: 0%;
+   margin-top: 0%;
+   margin-bottom: 0%;
+   position: relative;
+   top: 10px;
 
 }
 
