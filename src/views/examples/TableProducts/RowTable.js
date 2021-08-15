@@ -45,7 +45,7 @@ function RowTable(props) {
           >
             <img
               alt="..."
-              src={require("../../../assets/My-Images/profile.jpg").default}
+              src={require("../../../assets/My-Images/imac.jpg").default}
             />
           </a>
           <Media>
@@ -63,8 +63,9 @@ function RowTable(props) {
         </Media>
       </th>
       <td>
-        <span style={{ color: "blue", paddingRight: "5px" }}> 2 </span> in stock
-        for variant
+      Product12
+        {/* <span style={{ color: "blue", paddingRight: "5px" }}> 2 </span> in stock
+        for variant */}
       </td>
       <td> 12 </td>
       <th> 17.4.2021 </th>
@@ -72,12 +73,12 @@ function RowTable(props) {
         <div
           style={{
             backgroundColor: 
-            props.status=="active" ?
+            props.status=="Available" ?
               "rgb(236, 236, 255)" :
-                  props.status=="pending" ?
+                  props.status=="Almost finished" ?
                       "rgb(245, 226, 198)" : "rgb(235, 161, 150)" ,
            // height: "auto",
-           // width: "60px",
+            width: "100px",
            // position: "relative",
             top: "0px",
             left: "0px",
@@ -85,9 +86,9 @@ function RowTable(props) {
             borderRadius: "90px",
             textAlign: "center",
             color:
-            props.status=="active" ?
+            props.status=="Available" ?
             "royalblue" :
-                  props.status=="pending" ?
+                  props.status=="Almost finished" ?
                       "rgb(255, 184, 5)" : "rgb(245, 88, 56)" ,
             
           }}

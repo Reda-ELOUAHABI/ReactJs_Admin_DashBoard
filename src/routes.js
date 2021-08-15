@@ -10,6 +10,7 @@ import Products from "views/examples/Products";
 import Customers from "views/examples/Customers";
 import Analytics from "views/examples/Analytics";
 import ProfileUser from "views/ProfileUser";
+import Settings from "views/examples/Settings";
 
 var routes = [
   {
@@ -64,6 +65,14 @@ var routes = [
     layout: "/admin",
   },
   {
+    path: "/settings",
+    name: "Settings",
+    icon: "fas fa-cog ",
+    component: Settings,
+    layout: "/admin",
+  },
+
+  {
     path: "/index ",
     name: "User",
     icon: "fas fa-users ",
@@ -77,8 +86,7 @@ var routes = [
   //   component: ProfileUser,
   //   layout: "/user",
   // },
-]
-;
+];
 export default routes;
 
 // {

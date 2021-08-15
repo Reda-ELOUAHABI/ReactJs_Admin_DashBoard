@@ -12,10 +12,11 @@ import {
   UncontrolledTooltip,
 } from "reactstrap";
 
-import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
+// import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 // core components
 import Header from "components/Headers/Header.js";
 import TableOrders from "./TableOrders/Table";
+import PaginationOrder from "./TableOrders/Pagination";
 
 const Orders = () => {
   const [copiedText, setCopiedText] = useState();
@@ -38,11 +39,12 @@ const Orders = () => {
         </Row>
          */}
 
-         
-         <div style={{
-           padding: "30px",
-           backgroundColor: "white"
-         }}>
+          
+          <div style={{
+            paddingTop: "10px",
+            backgroundColor: "white",
+            borderRadius: "20px",
+          }}>
                 <div>
                   {/* <div class="row d-flex justify-content-between mx-auto mt-4 mb-3"> */}
                   <div id="Filter-Serach">
@@ -50,7 +52,7 @@ const Orders = () => {
                     <div class="row justify-content-end">
                       <i
                         class="fa fa-search"
-                        id="iconSearch"
+                        id="iconSearch4Orders"
                         aria-hidden="true"
                       ></i>
                       <div class="input-group col-lg-10 col-md-12 SearchProducts">
@@ -60,10 +62,10 @@ const Orders = () => {
                           {/* <i class="fa fa-search" aria-hidden="true" ></i> */}
                           <input
                             class="form-control"
-                            id="search-box"
+                            id="search-box-orders"
                             type="text"
                             name="search"
-                            placeholder="Search Products "
+                            placeholder="Search "
                             required="required"
                           />
                         </div>
@@ -79,7 +81,7 @@ const Orders = () => {
                             <option value="Vendor">Date2</option>
                           </select>
                         </div>
-                        <div class="input-group-append">
+                        <div class="input-group-append statusBox">
                           <select
                             class="form-control rounded-0 text-capitalize"
                             id="search-filter"
@@ -101,62 +103,9 @@ const Orders = () => {
               </div>
              
           
-
+<br></br>
           {/* Pagination */}
-          <div 
-          style={{
-            position: "relative",
-            left: "540px",
-          }}
-          >
-              
-          <Pagination aria-label="Page navigation example">
-      <PaginationItem disabled>
-        <PaginationLink first href="#" />
-      </PaginationItem>
-      <PaginationItem disabled>
-        <PaginationLink previous href="#" />
-      </PaginationItem>
-      <PaginationItem active>
-        <PaginationLink href="#">
-          1
-        </PaginationLink>
-      </PaginationItem>
-      <PaginationItem>
-        <PaginationLink href="#">
-          2
-        </PaginationLink>
-      </PaginationItem>
-      <PaginationItem>
-        <PaginationLink href="#">
-          3
-        </PaginationLink>
-      </PaginationItem>
-      <PaginationItem>
-        <PaginationLink href="#">
-          4
-        </PaginationLink>
-      </PaginationItem>
-      <PaginationItem>
-        <PaginationLink href="#">
-          5
-        </PaginationLink>
-      </PaginationItem>
-      <PaginationItem>
-        <PaginationLink next href="#" />
-      </PaginationItem>
-      <PaginationItem>
-        <PaginationLink last href="#" />
-      </PaginationItem>
-    </Pagination>
-
-
-          </div>
-
-
-
-         
-
+              <PaginationOrder />
       </Container>
     </>
   );

@@ -37,6 +37,13 @@ width: 1000px;
   width: 400px;
   border-left: 0;
 }
+
+#search-box-orders {
+  width: 400px;
+  margin-right: 100px;
+  background-color: rgb(241, 241, 241);
+}
+
 #iconSearch {
   position: relative;
   left: 135px;
@@ -44,6 +51,19 @@ width: 1000px;
   /* make search infront of other */
   z-index: 1;
 }
+
+#iconSearch4Orders {
+  position: relative;
+  left: 45px;
+  bottom: -13px;
+  /* make search infront of other */
+  z-index: 1;
+}
+
+.statusBox{
+  margin-left: 40px;
+}
+
 /* Styling placeHolder */
 ::-webkit-input-placeholder {
   position: relative;
