@@ -1,96 +1,147 @@
-import React, { useState } from 'react';
-import { TabContent,Container, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
-import classnames from 'classnames';
-// reactstrap components
-// import { Card,  Row } from "reactstrap";
+import React from "react";
 
-// core components
-import Header from "components/Headers/Header.js";
+import "./SettingStyle.scss"
 
-const MapWrapper = () => {
+import PropTypes from "prop-types";
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
+import Typography from "@material-ui/core/Typography";
+import Box from "@material-ui/core/Box";
+import Header from "components/Headers/Header";
+//import { makeStyles } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
+import {
+  TabContent,
+  Container,
+  TabPane,
+  Nav,
+  NavItem,
+  NavLink,
+  Card,
+  Button,
+  CardTitle,
+  CardText,
+  Row,
+  Col,
+} from "reactstrap";
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+
   return (
-    <>
-      <div className="map-canvas" style={{
-          height: "100px"
-      }}>
-        <h1> Settings Page</h1>
-      </div>
-     
-    </>
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+      style={{
+        backgroundColor: "white",
+        height: "100px",
+      }}
+    >
+      {value === index && (
+        <Box p={3}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
   );
+}
+
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.any.isRequired,
+  value: PropTypes.any.isRequired,
 };
 
-const Settings = (props) => {
-    const [activeTab, setActiveTab] = useState('1');
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
+  };
+}
 
-    const toggle = tab => {
-      if(activeTab !== tab) setActiveTab(tab);
-    }
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+
+    //backgroundColor: theme.palette.background.paper,
+  },
+}));
+
+export default function Settings() {
+  const classes = useStyles();
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   return (
-    <>
-      <Header />
-      {/* Page content */}
+    <div>
       <Container className="mt--7" fluid>
-        <Row>
-          <div className="col">
-            <Card className="shadow border-0">
-              <MapWrapper />
-            </Card>
-          </div>
-        </Row>
+        <Header />
 
-        <div st>
+        {/*className={classes.root}*/}
+        <div>
+          <AppBar
+        
+        //todo: find how to change the bottom border selected element
+            position="static"
+            style={{
+              backgroundColor: "white",
+              color: "royalblue",
+              '&:before': {
+            borderColor: "blue",
+        },
+        '&:after': {
+            borderColor: "green",
+        },
 
-        <Nav tabs>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === '1' })}
-            onClick={() => { toggle('1'); }}
-          >
-            Tab1
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === '2' })}
-            onClick={() => { toggle('2'); }}
-          >
-            More Tabs
-          </NavLink>
-        </NavItem>
-      </Nav>
-      <TabContent activeTab={activeTab}>
-        <TabPane tabId="1">
-          <Row>
-            <Col sm="12">
-              <h4>Tab 1 </h4>
-            </Col>
-          </Row>
-        </TabPane>
-        <TabPane tabId="2">
-          <Row>
-            <Col sm="6">
-               <h1>Hello  sss</h1>
-            </Col>
-            <Col sm="6">
-            <h1>Hello  sss</h1>
-              {/* <Card body>
-                <CardTitle>Special Title Treatment</CardTitle>
-                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                <Button>Go somewhere</Button>
-              </Card> */}
-            </Col>
-          </Row>
+
        
-       
-        </TabPane>
-      </TabContent>
+            }}
+          >
+            <Tabs
+              value={value}
+              onChange={handleChange}
+              aria-label="Settings Tab"
+            >
+              <Tab label="SITE INFO" />
+              <Tab label="GENERAL SETTINGS" />
+              <Tab label="SOCIAL LINKS" />
+              {/* <Tab label="API SETTINGS" {...a11yProps(3)} /> */}
+              <Tab label="API SETTINGS" />
+            </Tabs>
+          </AppBar>
+          <TabPanel value={value} index={0}>
+            <div>
+<h1>Website Information</h1>
+
+<form className={classes.root} noValidate autoComplete="off">
+  <TextField id="standard-basic" label="Standard" />
+  <TextField id="filled-basic" label="Filled" variant="filled" />
+  <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+</form>
+
+            </div>
+          </TabPanel>
+          <TabPanel value={value} index={1}>
+            Item Two
+          </TabPanel>
+          <TabPanel value={value} index={2}>
+            Item Three
+          </TabPanel>
+
+          <TabPanel value={value} index={3}>
+            Item Four
+          </TabPanel>
         </div>
-
- 
       </Container>
-    </>
+    </div>
   );
-};
-
-export default Settings;
+}
+// https://material-ui.com/components/text-fields/
+// https://reactstrap.github.io/components/tabs/
