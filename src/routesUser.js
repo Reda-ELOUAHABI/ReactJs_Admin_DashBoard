@@ -9,6 +9,7 @@ import Orders from "views/examplesUser/Orders";
 import Products from "views/examplesUser/Products";
 import Customers from "views/examplesUser/Customers";
 import Analytics from "views/examplesUser/Analytics";
+import Extensions from "views/examplesUser/extensions/Extensions";
 
 var routes = [
   {
@@ -62,6 +63,14 @@ var routes = [
     component: OthersStore,
     layout: "/user",
   },
+  {
+    path: "/extensions",
+    name: "Extensions",
+    icon: "fas fa-cloud ",
+    component: Extensions,
+    layout: "/user",
+  },
+
   {
     path: "/index ",
     name: "Admin",

@@ -9,6 +9,9 @@ react js object to css and inverse tool */
 }
 .hr {
   position: relative;
+  top: 35px;
+
+  margin-bottom: 15px;
   /* bottom: 40px; */
 }
 .AddProductBTN {

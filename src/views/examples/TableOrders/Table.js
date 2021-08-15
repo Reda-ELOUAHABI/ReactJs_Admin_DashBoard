@@ -27,10 +27,12 @@ import RowTable from "./RowTable";
 //https://codepen.io/chryss/pen/rbZxwa : just search filter on opencode
 
 //todo: change also those titles format
-function TableProducts() {
+function TableOrders() {
   return (
     <div className="container">
-      <Table className="table align-items-center table-flush" responsive>
+      <Table className="table align-items-center table-flush" style={{
+        backgroundColor: "white",
+      }} responsive>
         <thead>
           <tr>
             <th>
@@ -41,29 +43,35 @@ function TableProducts() {
             </th>
             <th scope="col">
               <h4>
-                Products <i class="fas fa-sort-down"></i>
+                Clients <i class="fas fa-sort-down"></i>
               </h4>
             </th>
             <th scope="col">
-              <h4>Inverntory</h4>
+              <h4>Order</h4>
             </th>
             <th scope="col">
-              <h4>Type</h4>
+              <h4>Quantity</h4>
             </th>
             <th scope="col">
-              <h4>Vendor</h4>
+              <h4>Date</h4>
+            </th>
+            <th scope="col">
+              <h4>Status</h4>
+            </th>
+            <th scope="col">
+              <h4>Action</h4>
             </th>
           </tr>
         </thead>
         <tbody>
-        <RowTable />
-        <RowTable />
-        <RowTable />
-        <RowTable />
+        <RowTable status="active"  />
+        <RowTable  status="pending"  />
+        <RowTable  status="active" />
+        <RowTable status="Canceled" />
 </tbody>
       </Table>
     </div>
   );
 }
 
-export default TableProducts;
+export default TableOrders;
