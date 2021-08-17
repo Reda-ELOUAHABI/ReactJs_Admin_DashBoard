@@ -80,82 +80,7 @@ export default function Settings() {
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
-        const FormExemple = () => {
-            return
-            <>
 
-<Form>
-                                <Row form>
-                                    <Col md={6}>
-                                        <FormGroup >
-                                            <Label for="exampleEmail" sm={2}>
-                                                Email
-                                            </Label>
-
-                                            <Input
-                                                type="email"
-                                                name="email"
-                                                id="exampleEmail"
-                                                placeholder="with a placeholder"
-                                            />
-
-                                        </FormGroup>
-                                    </Col>
-                                    <Col md={6}>
-                                        <FormGroup >
-                                            <Label for="exampleEmail" sm={2}>
-                                                Email
-                                            </Label>
-
-                                            <Input
-                                                type="email"
-                                                name="email"
-                                                id="exampleEmail"
-                                                placeholder="with a placeholder"
-                                            />
-
-                                        </FormGroup>
-                                    </Col>
-                                </Row>
-
-                                <Row form>
-                                    <Col md={6}>
-                                        <FormGroup >
-                                            <Label for="exampleEmail" sm={2}>
-                                                Email
-                                            </Label>
-
-                                            <Input
-                                                type="email"
-                                                name="email"
-                                                id="exampleEmail"
-                                                placeholder="with a placeholder"
-                                            />
-
-                                        </FormGroup>
-                                    </Col>
-                                    <Col md={6}>
-                                        <FormGroup >
-                                            <Label for="exampleEmail" sm={2}>
-                                                Email
-                                            </Label>
-
-                                            <Input
-                                                type="email"
-                                                name="email"
-                                                id="exampleEmail"
-                                                placeholder="with a placeholder"
-                                            />
-
-                                        </FormGroup>
-                                    </Col>
-                                </Row>
-                                <Button>Submit</Button>
-                            </Form>
-                        
-            </>
-
-        }
     return (
         <>
             <Header />
@@ -193,19 +118,27 @@ export default function Settings() {
                         <div>
                             <h1>Website Information</h1>
 
-                          <FormExemple />
-                        
+                            <FormSetting1 />
+
                         </div>
                     </TabPanel>
                     <TabPanel value={value} index={1}>
                         Item Two
+
+                        <FormSetting2 />
+
                     </TabPanel>
                     <TabPanel value={value} index={2}>
                         Item Three
+
+                        <FormSetting3 />
+
                     </TabPanel>
 
                     <TabPanel value={value} index={3}>
                         Item Four
+                        <FormSetting4 />
+
                     </TabPanel>
                 </div>
             </Container>
@@ -214,3 +147,363 @@ export default function Settings() {
 }
 // https://material-ui.com/components/text-fields/
 // https://reactstrap.github.io/components/tabs/
+
+
+const FormSetting1 = () => {
+    return (
+        <>
+
+
+
+            <Form>
+                <Row form>
+                    <Col md={4}>
+                        <FormGroup >
+                            <Label for="SiteName" sm={2}>
+                                Site Name
+                            </Label>
+
+                            <Input
+                                type="text"
+                                name="siteName"
+                                // id="exampleEmail"
+                                placeholder="TokenLite"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                    <Col md={4}>
+                        <FormGroup >
+                            <Label for="SiteEmail" sm={2}>
+                                Site Email
+                            </Label>
+
+                            <Input
+                                type="text"
+                                name="SiteEmail"
+                                // id="exampleEmail"
+                                placeholder="info@yourdomain.com"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                    <Col md={4}>
+                        <FormGroup >
+                            <Label for="SiteCopyright" sm={2}>
+                                Site Copyright
+                            </Label>
+
+                            <Input
+                                type="text"
+                                name="siteCopyright"
+                                //   id="exampleEmail"
+                                placeholder="All rights are reserved"
+                            />
+                            <FormText>Example help text that remains unchanged.</FormText>
+
+                        </FormGroup>
+                    </Col>
+                </Row>
+
+                <Row form>
+                    <Col md={4}>
+                        <FormGroup >
+                            <Label for="exampleEmail" sm={2}>
+                                Email
+                            </Label>
+
+                            <Input
+                                type="email"
+                                name="email"
+                                id="exampleEmail"
+                                placeholder="with a placeholder"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                    <Col md={4}>
+                        <FormGroup >
+                            <Label for="exampleEmail" sm={2}>
+                                Email
+                            </Label>
+
+                            <Input
+                                type="email"
+                                name="email"
+                                id="exampleEmail"
+                                placeholder="with a placeholder"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                    <Col md={4}>
+                        <FormGroup >
+                            <Label for="exampleEmail" sm={2}>
+                                Email
+                            </Label>
+
+                            <Input
+                                type="email"
+                                name="email"
+                                id="exampleEmail"
+                                placeholder="with a placeholder"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                </Row>
+
+                <Button>Submit</Button>
+            </Form>
+
+        </>
+    );
+
+};
+
+const FormSetting2 = () => {
+    return (
+        <>
+
+            <Form>
+                <Row form>
+                    <Col md={6}>
+                        <FormGroup >
+                            <Label for="exampleEmail" sm={2}>
+                                Email
+                            </Label>
+
+                            <Input
+                                type="email"
+                                name="email"
+                                id="exampleEmail"
+                                placeholder="with a placeholder"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                    <Col md={6}>
+                        <FormGroup >
+                            <Label for="exampleEmail" sm={2}>
+                                Email
+                            </Label>
+
+                            <Input
+                                type="email"
+                                name="email"
+                                id="exampleEmail"
+                                placeholder="with a placeholder"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                </Row>
+
+                <Row form>
+                    <Col md={6}>
+                        <FormGroup >
+                            <Label for="exampleEmail" sm={2}>
+                                Email
+                            </Label>
+
+                            <Input
+                                type="email"
+                                name="email"
+                                id="exampleEmail"
+                                placeholder="with a placeholder"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                    <Col md={6}>
+                        <FormGroup >
+                            <Label for="exampleEmail" sm={2}>
+                                Email
+                            </Label>
+
+                            <Input
+                                type="email"
+                                name="email"
+                                id="exampleEmail"
+                                placeholder="with a placeholder"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                </Row>
+                <Button>Submit</Button>
+            </Form>
+
+        </>
+    );
+
+};
+const FormSetting3 = () => {
+    return (
+        <>
+
+            <Form>
+                <Row form>
+                    <Col md={6}>
+                        <FormGroup >
+                            <Label for="exampleEmail" sm={2}>
+                                Email
+                            </Label>
+
+                            <Input
+                                type="email"
+                                name="email"
+                                id="exampleEmail"
+                                placeholder="with a placeholder"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                    <Col md={6}>
+                        <FormGroup >
+                            <Label for="exampleEmail" sm={2}>
+                                Email
+                            </Label>
+
+                            <Input
+                                type="email"
+                                name="email"
+                                id="exampleEmail"
+                                placeholder="with a placeholder"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                </Row>
+
+                <Row form>
+                    <Col md={6}>
+                        <FormGroup >
+                            <Label for="exampleEmail" sm={2}>
+                                Email
+                            </Label>
+
+                            <Input
+                                type="email"
+                                name="email"
+                                id="exampleEmail"
+                                placeholder="with a placeholder"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                    <Col md={6}>
+                        <FormGroup >
+                            <Label for="exampleEmail" sm={2}>
+                                Email
+                            </Label>
+
+                            <Input
+                                type="email"
+                                name="email"
+                                id="exampleEmail"
+                                placeholder="with a placeholder"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                </Row>
+                <Button>Submit</Button>
+            </Form>
+
+        </>
+    );
+
+};
+const FormSetting4 = () => {
+    return (
+        <>
+
+            <Form>
+                <Row form>
+                    <Col md={4}>
+                        <FormGroup >
+                            <Label for="exampleEmail" sm={2}>
+                                Email
+                            </Label>
+
+                            <Input
+                                type="email"
+                                name="email"
+                                id="exampleEmail"
+                                placeholder="with a placeholder"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                    <Col md={4}>
+                        <FormGroup >
+                            <Label for="exampleEmail" sm={2}>
+                                Email
+                            </Label>
+
+                            <Input
+                                type="email"
+                                name="email"
+                                id="exampleEmail"
+                                placeholder="with a placeholder"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                    <Col md={4}>
+                        <FormGroup >
+                            <Label for="exampleEmail" sm={2}>
+                                Email
+                            </Label>
+
+                            <Input
+                                type="email"
+                                name="email"
+                                id="exampleEmail"
+                                placeholder="with a placeholder"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                </Row>
+
+                <Row form>
+                    <Col md={6}>
+                        <FormGroup >
+                            <Label for="exampleEmail" sm={2}>
+                                Email
+                            </Label>
+
+                            <Input
+                                type="email"
+                                name="email"
+                                id="exampleEmail"
+                                placeholder="with a placeholder"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                    <Col md={6}>
+                        <FormGroup >
+                            <Label for="exampleEmail" sm={2}>
+                                Email
+                            </Label>
+
+                            <Input
+                                type="email"
+                                name="email"
+                                id="exampleEmail"
+                                placeholder="with a placeholder"
+                            />
+
+                        </FormGroup>
+                    </Col>
+                </Row>
+                <Button>Submit</Button>
+            </Form>
+
+        </>
+    );
+
+};
