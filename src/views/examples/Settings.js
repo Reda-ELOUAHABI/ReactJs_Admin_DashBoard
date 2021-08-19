@@ -81,6 +81,8 @@ export default function Settings() {
         setValue(newValue);
     };
 
+const BlueRoyaleColor ={ color: "royalblue",}
+
     return (
         <>
             <Header />
@@ -116,27 +118,30 @@ export default function Settings() {
                     </AppBar>
                     <TabPanel value={value} index={0}>
                         <div>
-                            <h1>Website Information</h1>
+                            <h1 style={BlueRoyaleColor}>Website Information</h1>
 
                             <FormSetting1 />
 
                         </div>
                     </TabPanel>
                     <TabPanel value={value} index={1}>
-                        Item Two
+                    <h1 style={BlueRoyaleColor}>Website Information</h1>
+
 
                         <FormSetting2 />
 
                     </TabPanel>
                     <TabPanel value={value} index={2}>
-                        Item Three
+                    <h1 style={BlueRoyaleColor}>Website Information</h1>
+
 
                         <FormSetting3 />
 
                     </TabPanel>
 
                     <TabPanel value={value} index={3}>
-                        Item Four
+                    <h1 style={BlueRoyaleColor}>Website Information</h1>
+
                         <FormSetting4 />
 
                     </TabPanel>
@@ -148,7 +153,17 @@ export default function Settings() {
 // https://material-ui.com/components/text-fields/
 // https://reactstrap.github.io/components/tabs/
 
+const styleNoWrap ={
+    whiteSpace: "nowrap",
+    fontWeight: "bold",
+}
+const stylebtnSubmit ={
+    backgroundColor: "#547dde",
+width: "100px",
+marginBottom: "100px",
+color: "#f0f0f0",
 
+}
 const FormSetting1 = () => {
     return (
         <>
@@ -159,7 +174,7 @@ const FormSetting1 = () => {
                 <Row form>
                     <Col md={4}>
                         <FormGroup >
-                            <Label for="SiteName" sm={2}>
+                            <Label for="SiteName" sm={2} style={styleNoWrap}>
                                 Site Name
                             </Label>
 
@@ -174,7 +189,7 @@ const FormSetting1 = () => {
                     </Col>
                     <Col md={4}>
                         <FormGroup >
-                            <Label for="SiteEmail" sm={2}>
+                            <Label for="SiteEmail" sm={2} style={styleNoWrap}>
                                 Site Email
                             </Label>
 
@@ -184,12 +199,14 @@ const FormSetting1 = () => {
                                 // id="exampleEmail"
                                 placeholder="info@yourdomain.com"
                             />
-
+                            <FormText>Using for contacts and sending mail .</FormText>
                         </FormGroup>
+                        
+                        
                     </Col>
                     <Col md={4}>
                         <FormGroup >
-                            <Label for="SiteCopyright" sm={2}>
+                            <Label for="SiteCopyright" sm={2} style={styleNoWrap}>
                                 Site Copyright
                             </Label>
 
@@ -199,61 +216,67 @@ const FormSetting1 = () => {
                                 //   id="exampleEmail"
                                 placeholder="All rights are reserved"
                             />
-                            <FormText>Example help text that remains unchanged.</FormText>
+                            <FormText>Copyright text for site.</FormText>
 
                         </FormGroup>
                     </Col>
                 </Row>
-
+{/* //SecondRow */}
                 <Row form>
                     <Col md={4}>
                         <FormGroup >
-                            <Label for="exampleEmail" sm={2}>
-                                Email
+                            <Label for="contactAdress" sm={2} style={styleNoWrap}>
+                                Contact Adress
                             </Label>
 
                             <Input
-                                type="email"
-                                name="email"
-                                id="exampleEmail"
-                                placeholder="with a placeholder"
+                                type="text"
+                                name="contactAdress"
+                                id="contactAdress"
+                            
                             />
-
+                            <FormText>Enter the Support Adress</FormText>
                         </FormGroup>
                     </Col>
+                    
+                    
                     <Col md={4}>
                         <FormGroup >
-                            <Label for="exampleEmail" sm={2}>
-                                Email
+                            <Label for="contactPhone" sm={2} style={styleNoWrap}>
+                                Contact Phone
                             </Label>
 
                             <Input
-                                type="email"
-                                name="email"
-                                id="exampleEmail"
-                                placeholder="with a placeholder"
+                                type="text"
+                                name="contactPhone"
+                                id="contactPhone"
+                            
                             />
-
+                            <FormText>Using for Contact and Support</FormText>
                         </FormGroup>
                     </Col>
+                        
+
                     <Col md={4}>
                         <FormGroup >
-                            <Label for="exampleEmail" sm={2}>
-                                Email
+                            <Label for="supportEmail" sm={2} style={styleNoWrap}>
+                                Contact Adress
                             </Label>
 
                             <Input
-                                type="email"
-                                name="email"
-                                id="exampleEmail"
-                                placeholder="with a placeholder"
+                                type="text"
+                                name="supportEmail"
+                                id="supportEmail"
+                            
                             />
-
+                            <FormText>Enter the Support Adress</FormText>
                         </FormGroup>
                     </Col>
+                   
                 </Row>
 
-                <Button>Submit</Button>
+                <Button style={stylebtnSubmit
+                } >  <i class="fas fa-sync"></i>Submit</Button>
             </Form>
 
         </>
@@ -267,69 +290,100 @@ const FormSetting2 = () => {
 
             <Form>
                 <Row form>
-                    <Col md={6}>
+                    <Col md={4}>
                         <FormGroup >
-                            <Label for="exampleEmail" sm={2}>
-                                Email
+                            <Label for="timezone" sm={2} style={styleNoWrap}>
+                                Time Zone
                             </Label>
 
-                            <Input
-                                type="email"
-                                name="email"
-                                id="exampleEmail"
-                                placeholder="with a placeholder"
-                            />
-
+                            
+                            <select class="form-select" aria-label="Default select example" style={{
+                                height: "calc(1.5em + 1.25rem - 2px)",
+                            }}>
+  <option selected>(UTC + 00:00)UTC</option>
+  <option value="1">(UTC + 01:00)UTC</option>
+  <option value="2">(UTC + 02:00)UTC</option>
+  <option value="3">(UTC + 03:00)UTC</option>
+</select>
                         </FormGroup>
                     </Col>
-                    <Col md={6}>
+                    <Col md={4}>
                         <FormGroup >
-                            <Label for="exampleEmail" sm={2}>
-                                Email
+                            <Label for="timezone" sm={2} style={styleNoWrap}>
+                                Time Zone
                             </Label>
-
-                            <Input
-                                type="email"
-                                name="email"
-                                id="exampleEmail"
-                                placeholder="with a placeholder"
-                            />
-
+                            <select class="form-select" aria-label="Default select example" style={{
+                                height: "calc(1.5em + 1.25rem - 2px)",
+                                                        }}>
+                            <option selected>6 Apr, 2019</option>
+                            <option value="1">6 Apr, 2019</option>
+                            <option value="2">6 Apr, 2019</option>
+                            <option value="3">6 Apr, 2019</option>
+                            </select>
                         </FormGroup>
                     </Col>
+                   
+                    <Col md={4}>
+                        <FormGroup >
+                            <Label for="timeformat" sm={2} style={styleNoWrap}>
+                                Time Format
+                            </Label>
+                            <select class="form-select" aria-label="Default select example" style={{
+                                height: "calc(1.5em + 1.25rem - 2px)",
+                                                        }}>
+                            <option selected>12:00 AM</option>
+                            <option value="1">12:00</option>
+                            </select>
+                        </FormGroup>
+                    </Col>
+                   
                 </Row>
 
                 <Row form>
                     <Col md={6}>
                         <FormGroup >
-                            <Label for="exampleEmail" sm={2}>
-                                Email
+                            <Label for="mainSiteURL" sm={2} style={styleNoWrap}>
+                            Main Site URL
                             </Label>
 
                             <Input
-                                type="email"
-                                name="email"
-                                id="exampleEmail"
-                                placeholder="with a placeholder"
+                                type="text"
+                                name="mainSiteURL"
+                                id="mainSiteURL"
+                                // placeholder="with a placeholder"
                             />
-
+                            <FormText>Set your main website url</FormText>
                         </FormGroup>
                     </Col>
-                    <Col md={6}>
+                    <Col md={4}>
                         <FormGroup >
-                            <Label for="exampleEmail" sm={2}>
-                                Email
+                            <Label for="UserPTHM" sm={2} style={styleNoWrap}>
+                                User Panel Theme
                             </Label>
-
-                            <Input
-                                type="email"
-                                name="email"
-                                id="exampleEmail"
-                                placeholder="with a placeholder"
-                            />
-
+                            <select class="form-select" aria-label="Default select example" style={{
+                                height: "calc(1.5em + 1.25rem - 2px)",
+                                                        }}>
+                            <option selected>Default</option>
+                            <option value="1">Manual</option>
+                            </select>
                         </FormGroup>
                     </Col>
+
+                    <Col md={2}>
+                        <FormGroup >
+                            <Label for="timeformat" sm={2} style={styleNoWrap}>
+                                Maintenace Mode
+                            </Label>
+                            {/* <input type="checkbox" checked data-toggle="toggle" data-style="ios" /> */}
+
+                            <div class="toggleWrapper">
+                            <input type="checkbox" name="toggle1" class="mobileToggle" id="toggle1" checked />
+                            <label for="toggle1"></label>
+                            </div>
+                            
+                        </FormGroup>
+                    </Col>
+
                 </Row>
                 <Button>Submit</Button>
             </Form>
