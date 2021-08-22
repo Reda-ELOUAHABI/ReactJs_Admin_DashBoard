@@ -40,7 +40,7 @@ function TabPanel(props) {
             {...other}
             style={{
                 backgroundColor: "white",
-                height: "400px",
+                height: "600px",
             }}
         >
             {value === index && (
@@ -81,7 +81,7 @@ export default function Settings() {
         setValue(newValue);
     };
 
-const BlueRoyaleColor ={ color: "royalblue",}
+    const BlueRoyaleColor = { color: "royalblue", }
 
     return (
         <>
@@ -96,6 +96,7 @@ const BlueRoyaleColor ={ color: "royalblue",}
                         style={{
                             backgroundColor: "white",
                             color: "royalblue",
+                            // zIndex: "-11",
                             //       '&:before': {
                             //     borderColor: "blue",
                             // },
@@ -125,14 +126,14 @@ const BlueRoyaleColor ={ color: "royalblue",}
                         </div>
                     </TabPanel>
                     <TabPanel value={value} index={1}>
-                    <h1 style={BlueRoyaleColor}>Website Information</h1>
+                        <h1 style={BlueRoyaleColor}>Application Settings</h1>
 
 
                         <FormSetting2 />
 
                     </TabPanel>
                     <TabPanel value={value} index={2}>
-                    <h1 style={BlueRoyaleColor}>Website Information</h1>
+                        <h1 style={BlueRoyaleColor}>Social Profile Links</h1>
 
 
                         <FormSetting3 />
@@ -140,7 +141,7 @@ const BlueRoyaleColor ={ color: "royalblue",}
                     </TabPanel>
 
                     <TabPanel value={value} index={3}>
-                    <h1 style={BlueRoyaleColor}>Website Information</h1>
+                        <h1 style={BlueRoyaleColor}>API Credentials</h1>
 
                         <FormSetting4 />
 
@@ -153,17 +154,18 @@ const BlueRoyaleColor ={ color: "royalblue",}
 // https://material-ui.com/components/text-fields/
 // https://reactstrap.github.io/components/tabs/
 
-const styleNoWrap ={
+const styleNoWrap = {
     whiteSpace: "nowrap",
     fontWeight: "bold",
 }
-const stylebtnSubmit ={
+const stylebtnSubmit = {
     backgroundColor: "#547dde",
-width: "100px",
-marginBottom: "100px",
-color: "#f0f0f0",
+    width: "100px",
+    marginBottom: "100px",
+    color: "#f0f0f0",
 
 }
+
 const FormSetting1 = () => {
     return (
         <>
@@ -201,8 +203,8 @@ const FormSetting1 = () => {
                             />
                             <FormText>Using for contacts and sending mail .</FormText>
                         </FormGroup>
-                        
-                        
+
+
                     </Col>
                     <Col md={4}>
                         <FormGroup >
@@ -221,7 +223,7 @@ const FormSetting1 = () => {
                         </FormGroup>
                     </Col>
                 </Row>
-{/* //SecondRow */}
+                {/* //SecondRow */}
                 <Row form>
                     <Col md={4}>
                         <FormGroup >
@@ -233,13 +235,13 @@ const FormSetting1 = () => {
                                 type="text"
                                 name="contactAdress"
                                 id="contactAdress"
-                            
+
                             />
                             <FormText>Enter the Support Adress</FormText>
                         </FormGroup>
                     </Col>
-                    
-                    
+
+
                     <Col md={4}>
                         <FormGroup >
                             <Label for="contactPhone" sm={2} style={styleNoWrap}>
@@ -250,12 +252,12 @@ const FormSetting1 = () => {
                                 type="text"
                                 name="contactPhone"
                                 id="contactPhone"
-                            
+
                             />
                             <FormText>Using for Contact and Support</FormText>
                         </FormGroup>
                     </Col>
-                        
+
 
                     <Col md={4}>
                         <FormGroup >
@@ -267,12 +269,12 @@ const FormSetting1 = () => {
                                 type="text"
                                 name="supportEmail"
                                 id="supportEmail"
-                            
+
                             />
                             <FormText>Enter the Support Adress</FormText>
                         </FormGroup>
                     </Col>
-                   
+
                 </Row>
 
                 <Button style={stylebtnSubmit
@@ -296,15 +298,15 @@ const FormSetting2 = () => {
                                 Time Zone
                             </Label>
 
-                            
+
                             <select class="form-select" aria-label="Default select example" style={{
                                 height: "calc(1.5em + 1.25rem - 2px)",
                             }}>
-  <option selected>(UTC + 00:00)UTC</option>
-  <option value="1">(UTC + 01:00)UTC</option>
-  <option value="2">(UTC + 02:00)UTC</option>
-  <option value="3">(UTC + 03:00)UTC</option>
-</select>
+                                <option selected>(UTC + 00:00)UTC</option>
+                                <option value="1">(UTC + 01:00)UTC</option>
+                                <option value="2">(UTC + 02:00)UTC</option>
+                                <option value="3">(UTC + 03:00)UTC</option>
+                            </select>
                         </FormGroup>
                     </Col>
                     <Col md={4}>
@@ -314,15 +316,15 @@ const FormSetting2 = () => {
                             </Label>
                             <select class="form-select" aria-label="Default select example" style={{
                                 height: "calc(1.5em + 1.25rem - 2px)",
-                                                        }}>
-                            <option selected>6 Apr, 2019</option>
-                            <option value="1">6 Apr, 2019</option>
-                            <option value="2">6 Apr, 2019</option>
-                            <option value="3">6 Apr, 2019</option>
+                            }}>
+                                <option selected>6 Apr, 2019</option>
+                                <option value="1">6 Apr, 2019</option>
+                                <option value="2">6 Apr, 2019</option>
+                                <option value="3">6 Apr, 2019</option>
                             </select>
                         </FormGroup>
                     </Col>
-                   
+
                     <Col md={4}>
                         <FormGroup >
                             <Label for="timeformat" sm={2} style={styleNoWrap}>
@@ -330,43 +332,47 @@ const FormSetting2 = () => {
                             </Label>
                             <select class="form-select" aria-label="Default select example" style={{
                                 height: "calc(1.5em + 1.25rem - 2px)",
-                                                        }}>
-                            <option selected>12:00 AM</option>
-                            <option value="1">12:00</option>
+                            }}>
+                                <option selected>12:00 AM</option>
+                                <option value="1">12:00</option>
                             </select>
                         </FormGroup>
                     </Col>
-                   
+
                 </Row>
 
                 <Row form>
                     <Col md={6}>
                         <FormGroup >
                             <Label for="mainSiteURL" sm={2} style={styleNoWrap}>
-                            Main Site URL
+                                Main Site URL
                             </Label>
 
                             <Input
                                 type="text"
                                 name="mainSiteURL"
                                 id="mainSiteURL"
-                                // placeholder="with a placeholder"
+                            // placeholder="with a placeholder"
                             />
                             <FormText>Set your main website url</FormText>
                         </FormGroup>
                     </Col>
+
                     <Col md={4}>
-                        <FormGroup >
+                        <FormGroup style={{
+                            marginBottom: "0.5px"
+                        }}>
                             <Label for="UserPTHM" sm={2} style={styleNoWrap}>
                                 User Panel Theme
                             </Label>
                             <select class="form-select" aria-label="Default select example" style={{
                                 height: "calc(1.5em + 1.25rem - 2px)",
-                                                        }}>
-                            <option selected>Default</option>
-                            <option value="1">Manual</option>
+                            }}>
+                                <option selected>Default</option>
+                                <option value="1">Manual</option>
                             </select>
                         </FormGroup>
+                        <FormText>Color scheme for user</FormText>
                     </Col>
 
                     <Col md={2}>
@@ -375,17 +381,40 @@ const FormSetting2 = () => {
                                 Maintenace Mode
                             </Label>
                             {/* <input type="checkbox" checked data-toggle="toggle" data-style="ios" /> */}
+                            <div></div>
 
-                            <div class="toggleWrapper">
+                            <label class="form-switch">
+                                `  <input type="checkbox" />
+                                <i></i>
+                                Enable
+                            </label>`
+                            {/* <div class="toggleWrapper">
                             <input type="checkbox" name="toggle1" class="mobileToggle" id="toggle1" checked />
                             <label for="toggle1"></label>
-                            </div>
-                            
+                            </div> */}
+                            <FormText>Make site offline</FormText>
                         </FormGroup>
                     </Col>
 
                 </Row>
-                <Button>Submit</Button>
+                <Row>
+                    <Col md={12}>
+                        <FormGroup >
+                            <Label for="maintText" sm={2} style={styleNoWrap}>
+                                Maintenace Text
+                            </Label>
+
+                            <Input
+                                type="text"
+                                name="mainText"
+                                id="mainText"
+                            // placeholder="with a placeholder"
+                            />
+                        </FormGroup>
+                    </Col>
+                </Row>
+                <Button style={stylebtnSubmit
+                } >  <i class="fas fa-sync"></i>Submit</Button>
             </Form>
 
         </>
@@ -400,30 +429,30 @@ const FormSetting3 = () => {
                 <Row form>
                     <Col md={6}>
                         <FormGroup >
-                            <Label for="exampleEmail" sm={2}>
-                                Email
+                            <Label for="Facebook" sm={2} style={styleNoWrap}>
+                                Facebook
                             </Label>
 
                             <Input
-                                type="email"
-                                name="email"
-                                id="exampleEmail"
-                                placeholder="with a placeholder"
+                                type="text"
+                                name="facebook"
+                                id="facebook"
+                                placeholder="http://www.facebook.com/user-name"
                             />
 
                         </FormGroup>
                     </Col>
                     <Col md={6}>
                         <FormGroup >
-                            <Label for="exampleEmail" sm={2}>
-                                Email
+                            <Label for="twitter" sm={2} style={styleNoWrap}>
+                                Twitter
                             </Label>
 
                             <Input
-                                type="email"
-                                name="email"
-                                id="exampleEmail"
-                                placeholder="with a placeholder"
+                                type="text"
+                                name="twitter"
+                                id="twitter"
+                                placeholder="http://www.twitter.com/user-name"
                             />
 
                         </FormGroup>
@@ -433,36 +462,37 @@ const FormSetting3 = () => {
                 <Row form>
                     <Col md={6}>
                         <FormGroup >
-                            <Label for="exampleEmail" sm={2}>
-                                Email
+                            <Label for="linkedin" sm={2} style={styleNoWrap}>
+                                Linkedin
                             </Label>
 
                             <Input
-                                type="email"
-                                name="email"
-                                id="exampleEmail"
-                                placeholder="with a placeholder"
+                                type="text"
+                                name="linkdn"
+                                id="linkdin"
+                                placeholder="http://www.linked-in/user-name"
                             />
 
                         </FormGroup>
                     </Col>
                     <Col md={6}>
                         <FormGroup >
-                            <Label for="exampleEmail" sm={2}>
-                                Email
+                            <Label for="github" sm={2} style={styleNoWrap}>
+                                Github
                             </Label>
 
                             <Input
-                                type="email"
-                                name="email"
-                                id="exampleEmail"
-                                placeholder="with a placeholder"
+                                type="text"
+                                name="github"
+                                id="github"
+                                placeholder="http://www.github.com/username"
                             />
 
                         </FormGroup>
                     </Col>
                 </Row>
-                <Button>Submit</Button>
+                <Button style={stylebtnSubmit
+                } >  <i class="fas fa-sync"></i>Submit</Button>
             </Form>
 
         </>
@@ -475,89 +505,95 @@ const FormSetting4 = () => {
 
             <Form>
                 <Row form>
-                    <Col md={4}>
+                    <Col md={6}>
                         <FormGroup >
-                            <Label for="exampleEmail" sm={2}>
-                                Email
+                            <Label for="facebookClientID" sm={2} style={styleNoWrap}>
+                                Facebook Client ID
                             </Label>
 
                             <Input
-                                type="email"
-                                name="email"
-                                id="exampleEmail"
-                                placeholder="with a placeholder"
+                                type="text"
+                                name="facebookClientID"
+                                id="facebookClientID"
+                            //placeholder="with a placeholder"
                             />
 
                         </FormGroup>
                     </Col>
-                    <Col md={4}>
+                    <Col md={6}>
                         <FormGroup >
-                            <Label for="exampleEmail" sm={2}>
-                                Email
+                            <Label for="facebookClientSecret" sm={2} style={styleNoWrap}>
+                                Facebook Client Secret
                             </Label>
 
                             <Input
-                                type="email"
-                                name="email"
-                                id="exampleEmail"
-                                placeholder="with a placeholder"
-                            />
-
-                        </FormGroup>
-                    </Col>
-                    <Col md={4}>
-                        <FormGroup >
-                            <Label for="exampleEmail" sm={2}>
-                                Email
-                            </Label>
-
-                            <Input
-                                type="email"
-                                name="email"
-                                id="exampleEmail"
-                                placeholder="with a placeholder"
+                                type="text"
+                                name="facebookClientSecret"
+                                id="facebookClientSecret"
+                            //placeholder="with a placeholder"
                             />
 
                         </FormGroup>
                     </Col>
                 </Row>
-
+                <p style={stylePSpecial}>In your App Set this redirect URL:  	&nbsp;	&nbsp;
+                <b style={stylePSpecialBold}>
+                       http://app.tokenwiz.xyz/auth/facebook/callback
+                </b>
+                 </p>
                 <Row form>
                     <Col md={6}>
                         <FormGroup >
-                            <Label for="exampleEmail" sm={2}>
-                                Email
+                            <Label for="googleClientID" sm={2} style={styleNoWrap}>
+                                Google Client ID
                             </Label>
 
                             <Input
-                                type="email"
-                                name="email"
-                                id="exampleEmail"
-                                placeholder="with a placeholder"
+                                type="text"
+                                name="googleClientID"
+                                id="googleClientID"
+                            //placeholder="with a placeholder"
                             />
 
                         </FormGroup>
                     </Col>
                     <Col md={6}>
                         <FormGroup >
-                            <Label for="exampleEmail" sm={2}>
-                                Email
+                            <Label for="googleClientSecret" sm={2} style={styleNoWrap}>
+                                Google Client Secret
                             </Label>
 
                             <Input
-                                type="email"
-                                name="email"
-                                id="exampleEmail"
-                                placeholder="with a placeholder"
+                                type="text"
+                                name="googleClientSecret"
+                                id="googleClientSecret"
+                            //placeholder="with a placeholder"
                             />
 
                         </FormGroup>
                     </Col>
                 </Row>
-                <Button>Submit</Button>
+                <p style={stylePSpecial}>In your App Set this redirect URL:  	&nbsp;	&nbsp;
+                <b style={stylePSpecialBold}>
+                       http://app.tokenwiz.xyz/auth/google/callback
+                </b>
+                 </p>
+                <Button style={stylebtnSubmit
+                } >  <i class="fas fa-sync"></i>Submit</Button>
             </Form>
 
         </>
     );
 
 };
+
+
+
+const stylePSpecial ={
+    color: "#00ebfc",
+    marginBottom: "-5px"
+}
+const stylePSpecialBold ={
+        fontWeight: "bold",
+        cursor: "pointer"
+}

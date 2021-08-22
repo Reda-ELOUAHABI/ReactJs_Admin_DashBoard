@@ -54,8 +54,8 @@ const Sidebar = (props) => {
   let routes1 = [];
   const createLinks = (routes) => {
     //devide the router array into 2 differents links devisions as they asked
-    // 10 for extra routes as the max of routes
-    routes1 = routes.slice(5, 10);
+    // 10 15 for extra routes as the max of routes
+    routes1 = routes.slice(5, 15);
     routes = routes.slice(0, 5);
     // console.log(routes);
     // console.log("\n");

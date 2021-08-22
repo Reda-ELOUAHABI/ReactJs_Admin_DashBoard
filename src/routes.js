@@ -11,6 +11,9 @@ import Customers from "views/examples/Customers";
 import Analytics from "views/examples/Analytics";
 import ProfileUser from "views/ProfileUser";
 import Settings from "views/examples/Settings";
+import Register from "views/examples/Auth/Register";
+import Login from "views/examples/Auth/Login";
+import LoginRegister from "views/examples/Auth/LoginRegister";
 
 var routes = [
   {
@@ -49,6 +52,27 @@ var routes = [
     component: Analytics,
     layout: "/admin",
   },
+  {
+    path: "/register",
+    name: "Register",
+    icon: "ni ni-circle-08 text-pink",
+    component: Register,
+    layout: "/auth",
+  },
+  {
+    path: "/login",
+    name: "Login",
+    icon: "ni ni-key-25 text-info",
+    component: Login,
+    layout: "/auth",
+  },
+  {
+    path: "/loginRegister",
+    name: "LoginRegister",
+    icon: "ni ni-key-25 text-info",
+    component: LoginRegister,
+    layout: "/auth",
+  },
 
   {
     path: "/online_store",
@@ -79,6 +103,9 @@ var routes = [
     component: OthersStore,
     layout: "/user",
   },
+
+
+
   // {
   //   path: "/profile ",
   //   name: "User",
