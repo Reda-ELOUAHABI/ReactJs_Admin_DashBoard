@@ -1,5 +1,44 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
+.titleH{
+  color: black;
+  font-weight:1000;
+  position: relative;
+  top: 30vh;
+  left: 80vh;
+}
+.titleP{
+  color: rgb(112, 112, 112);
+  font-weight:1000;
+  position: relative;
+  top: 30vh;
+  left: 75vh;
+}
+
+.LabelPositionning{
+  // margin-left: -230px;
+  // margin-bottom: 10px;
+  color: black;
+  font-weight:700;
+
+}
+
+/////////
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(94, 94, 94);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(109, 109, 109);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(82, 82, 82);
+}
+
+//////////
+
 .login-page1 {
   width: 360px;
   padding: 8% 0 0;
@@ -7,20 +46,24 @@
 }
 .form1 {
   position: relative;
-  top: 30vh;
+  top: 20vh;
   left: 70vh;
   z-index: 1;
   background: #FFFFFF;
   max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
+  padding-top: 10px;
+  margin: 0 auto 0px;
+  padding-right: 45px;
+  padding-bottom: 45px;
+  padding-left: 45px;
+  // height: 480px;
+  //text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 .form1 input {
   font-family: "Roboto", sans-serif;
   outline: 0;
-  background: #f2f2f2;
+  background: #e8ebf3;
   width: 100%;
   border: 0;
   margin: 0 0 15px;
@@ -32,7 +75,7 @@
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #4CAF50;
+  background: #4a62eb;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -43,15 +86,15 @@
   cursor: pointer;
 }
 .form1 button:hover,.form1 button:active,.form1 button:focus {
-  background: #43A047;
+  background: #4364a0;
 }
 .form1 .message1 {
-  margin: 15px 0 0;
+  //margin: 15px 0 0;
   color: #b3b3b3;
   font-size: 12px;
 }
 .form1 .message1 a {
-  color: #4CAF50;
+  color: #4c6faf;
   text-decoration: none;
 }
 .form1 .register-form1 {

@@ -1,33 +1,154 @@
-import React, { useEffect,useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { Label, FormGroup, Input , Col , Row} from 'reactstrap';
 import "./LoginRegisterStyle.scss"
 
 function LoginRegister(props) {
-const [userIsRegistered,setuserIsRegistered] =useState(true);
+    const [userIsRegistered, setuserIsRegistered] = useState(false);
     // var userIsRegistered = true;
     const RegisterForm = () => {
         return (
-            <form class="login-form1">
-                <input type="text" placeholder="name" />
-                <input type="password" placeholder="password" />
-                <input type="text" placeholder="email address" />
-                <button>create</button>
-                <p class="message1">Already registered? <a href="#"
-                    onClick={Toggle}
-                >Sign In</a></p>
-            </form>
+            <div>
+
+
+                <h1 className="titleH" >
+                    welcome Back !
+                </h1>
+                <p className="titleP" >
+                    Sign in in your account to continue
+                </p>
+
+                
+                <div class="login-page1">
+                    <div class="form1" style={{height:"480px"}}>
+                    <form class="login-form1">
+                    <Label for="name" className="LabelPositionning">Name</Label>
+                            <br></br>
+                            <input type="text" placeholder="Enter Your Name" />
+
+
+                            <Label for="email" className="LabelPositionning">Email</Label>
+                            <br></br>
+                            <input type="text" placeholder="Enter Your Email" />
+                            <Label for="password" className="LabelPositionning">Password</Label>
+                            <br></br>
+                            <input type="password" placeholder="Enter Your Password" />
+
+                            <p style={{color: "royalblue",
+                            fontWeight: "bold",
+                            cursor: "pointer"
+                            }}><a>
+                                Forgot your password ?
+                            </a></p>
+                            {/* <div style={{whiteSpace: "nowrap",}}>
+                            <input type="checkbox" />
+                            <p>
+                                    Check me out
+                                </p>
+                            </div> */}
+                            <Row style={{
+                                marginBottom: "-40px",
+                                marginTop: "-30px"
+                            }}>
+                                <Col style={{
+                                    marginLeft: "-90px"
+                                }} > <input type="checkbox" /></Col>
+                            <Col style={{
+                                    marginLeft: "-90px"
+                                }}>
+                                <p style={{
+                                    // paddingLeft: "-60px",
+                                marginLeft: "-30px"
+                                }}>
+                                    Remember me next time
+                                </p>
+                            
+                            </Col>
+                            
+                            </Row>
+                      
+                         
+                            <button style={{
+                                marginBottom: "20px"
+                            }}>login</button>
+                            <p class="message1">Already registered? <a href="#"
+                                onClick={Toggle}
+                            >Sign In</a></p>
+                        </form>
+                    </div></div>
+            </div>
+
+
+
         );
     }
     const LoginForm = () => {
-        return <form class="login-form1">
-            <input type="text" placeholder="username" />
-            <input type="password" placeholder="password" />
-            <button>login</button>
-            <p class="message1">Not registered? <a href="#"
+        return (
+            <div>
 
-                onClick={Toggle}
 
-            >Create an account</a></p>
-        </form>
+                <h1 className="titleH" >
+                    welcome Back !
+                </h1>
+                <p className="titleP" >
+                    Sign in in your account to continue
+                </p>
+                <div class="login-page1">
+                    <div class="form1" style={{height:"450px"}}>
+                        <form class="login-form1">
+                            <Label for="email" className="LabelPositionning">Email</Label>
+                            <br></br>
+                            <input type="text" placeholder="Enter Your Email" />
+                            <Label for="password" className="LabelPositionning">Password</Label>
+                            <br></br>
+                            <input type="password" placeholder="Enter Your Password" />
+
+                            <p style={{color: "royalblue",
+                            fontWeight: "bold",
+                            cursor: "pointer"
+                            }}><a>
+                                Forgot your password ?
+                            </a></p>
+                            {/* <div style={{whiteSpace: "nowrap",}}>
+                            <input type="checkbox" />
+                            <p>
+                                    Check me out
+                                </p>
+                            </div> */}
+                            <Row style={{
+                                marginBottom: "-40px",
+                                marginTop: "-30px"
+                            }}>
+                                <Col style={{
+                                    marginLeft: "-90px"
+                                }} > <input type="checkbox" /></Col>
+                            <Col style={{
+                                    marginLeft: "-90px"
+                                }}>
+                                <p style={{
+                                    // paddingLeft: "-60px",
+                                marginLeft: "-30px"
+                                }}>
+                                    Remember me next time
+                                </p>
+                            
+                            </Col>
+                            
+                            </Row>
+                      
+                         
+                            <button style={{
+                                marginBottom: "20px"
+                            }}>login</button>
+                            <p class="message1">Not registered? <a href="#"
+
+                                onClick={Toggle}
+
+                            >Create an account</a></p>
+                        </form>
+                    </div></div>
+            
+            </div>
+        );
     }
     function Toggle() {
         console.log(userIsRegistered);
@@ -37,16 +158,10 @@ const [userIsRegistered,setuserIsRegistered] =useState(true);
 
     return (
         <div>
-            <div class="login-page1">
-                <div class="form1">
 
-                    {userIsRegistered ? <RegisterForm /> :<LoginForm /> }
-                    {/* {userIsRegistered ? <LoginForm /> : <RegisterForm />} */}
+            {userIsRegistered ? <RegisterForm /> : <LoginForm />}
+            {/* {userIsRegistered ? <LoginForm /> : <RegisterForm />} */}
 
-
-
-                </div>
-            </div>
         </div>
     )
 
