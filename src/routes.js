@@ -14,6 +14,7 @@ import Settings from "views/examples/Settings";
 import Register from "views/examples/Auth/Register";
 import Login from "views/examples/Auth/Login";
 import LoginRegister from "views/examples/Auth/LoginRegister";
+import Profile from "views/examples/Auth/Profile";
 
 var routes = [
   {
@@ -71,6 +72,14 @@ var routes = [
     name: "LoginRegister",
     icon: "ni ni-key-25 text-info",
     component: LoginRegister,
+    layout: "/auth",
+  },
+
+  {
+    path: "/Profile",
+    name: "Profile",
+    icon: "ni ni-circle-08 text-pink",
+    component: Profile,
     layout: "/auth",
   },
 
