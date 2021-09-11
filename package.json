@@ -23,8 +23,6 @@
     "url": "https://github.com/"
   },
   "homepage": "#/",
-
-
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
