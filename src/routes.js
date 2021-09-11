@@ -9,7 +9,6 @@ import Orders from "views/examples/Orders";
 import Products from "views/examples/Products";
 import Customers from "views/examples/Customers";
 import Analytics from "views/examples/Analytics";
-import ProfileUser from "views/ProfileUser";
 import Settings from "views/examples/Settings";
 import Register from "views/examples/Auth/Register";
 import Login from "views/examples/Auth/Login";
@@ -80,7 +79,7 @@ var routes = [
     name: "Profile",
     icon: "ni ni-circle-08 text-pink",
     component: Profile,
-    layout: "/auth",
+    layout: "/admin",
   },
 
   {

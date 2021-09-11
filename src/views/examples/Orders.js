@@ -1,15 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 // react component that copies the given text inside your clipboard
-import { CopyToClipboard } from "react-copy-to-clipboard";
+//import { CopyToClipboard } from "react-copy-to-clipboard";
 // reactstrap components
 import {
-  Card,
-  CardHeader,
-  CardBody,
   Container,
-  Row,
-  Col,
-  UncontrolledTooltip,
 } from "reactstrap";
 
 // import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
@@ -19,7 +13,7 @@ import TableOrders from "./TableOrders/Table";
 import PaginationOrder from "./TableOrders/Pagination";
 
 const Orders = () => {
-  const [copiedText, setCopiedText] = useState();
+  //const [copiedText, setCopiedText] = useState();
   return (
     <>
       <Header />

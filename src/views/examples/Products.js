@@ -1,23 +1,23 @@
 import React from "react";
 
 // reactstrap components
-import { Card, Container, Row } from "reactstrap";
+import {  Container } from "reactstrap";
 
 // core components
 import Header from "components/Headers/Header.js";
 import PaginationOrder from "./TableOrders/Pagination";
 import TableProductsUser from "./TableProducts/Table";
 
-const MapWrapper = () => {
-  return (
-    <>
-      <div className="map-canvas">
-        <h1> Products Page</h1>
-      </div>
+// const MapWrapper = () => {
+//   return (
+//     <>
+//       <div className="map-canvas">
+//         <h1> Products Page</h1>
+//       </div>
      
-    </>
-  );
-};
+//     </>
+//   );
+// };
 
 const Products = () => {
   return (

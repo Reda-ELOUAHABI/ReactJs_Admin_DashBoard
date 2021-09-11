@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
 // reactstrap components
 import {
   Card,
   CardHeader,
-  CardBody,
   Container,
   Row,
-  Col,
-  UncontrolledTooltip,
 } from "reactstrap";
 // core components
 import Header from "components/Headers/Header.js";

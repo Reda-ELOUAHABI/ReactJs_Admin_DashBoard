@@ -3,7 +3,6 @@ import React from "react";
 import "./SettingStyle.scss";
 
 import PropTypes from "prop-types";
-import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
@@ -11,18 +10,10 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Header from "components/Headers/Header";
 //import { makeStyles } from '@material-ui/core/styles';
-import TextField from "@material-ui/core/TextField";
+
 import {
-    TabContent,
     Container,
-    TabPane,
-    Nav,
-    NavItem,
-    NavLink,
-    Card,
     Button,
-    CardTitle,
-    CardText,
     Row,
     Col,
 } from "reactstrap";
@@ -58,23 +49,23 @@ TabPanel.propTypes = {
     value: PropTypes.any.isRequired,
 };
 
-function a11yProps(index) {
-    return {
-        id: `simple-tab-${index}`,
-        "aria-controls": `simple-tabpanel-${index}`,
-    };
-}
+// function a11yProps(index) {
+//     return {
+//         id: `simple-tab-${index}`,
+//         "aria-controls": `simple-tabpanel-${index}`,
+//     };
+// }
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
+// const useStyles = makeStyles((theme) => ({
+//     root: {
+//         flexGrow: 1,
 
-        //backgroundColor: theme.palette.background.paper,
-    },
-}));
+//         //backgroundColor: theme.palette.background.paper,
+//     },
+// }));
 
 export default function Settings() {
-    const classes = useStyles();
+   // const classes = useStyles();
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {

@@ -61,13 +61,13 @@ const AdminNavbar = (props) => {
               </InputGroup>
             </FormGroup>
           </Form>
-          <a className="test">
+          <a href="#/" className="test">
             <i class="fas fa-layer-group"></i>
             <span class="num1">2</span>
           </a>
           {/* <button className="btn "> */}
           {/* <i class="fas fa-check-circle"></i> */}
-          <a className="test">
+          <a href="#/" className="test">
             <span class="fa fa-check-circle"></span>
             <span class="num2">2</span>
           </a>
@@ -76,7 +76,7 @@ const AdminNavbar = (props) => {
               
             </a> */}
           {/* </button> */}
-          <a className="test">
+          <a href="#/" className="test">
             <i class="fas fa-shopping-cart fa-shopping-cart1"></i>
             <span class="num3">2</span>
           </a>

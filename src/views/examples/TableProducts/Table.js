@@ -3,24 +3,8 @@ import React from "react";
 // reactstrap components
 // import { Card, Container, Row } from "reactstrap";
 
-import {
-  Badge,
-  Card,
-  CardHeader,
-  CardFooter,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  Media,
-  Pagination,
-  PaginationItem,
-  PaginationLink,
-  Progress,
-  Table,
-  Container,
-  Row,
-  UncontrolledTooltip,
+import {  Table,
+ 
 } from "reactstrap";
 import RowTable from "./RowTable";
 

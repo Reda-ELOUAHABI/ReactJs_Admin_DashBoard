@@ -1,41 +1,25 @@
 import React from "react";
 
-// reactstrap components
-// import { Card, Container, Row } from "reactstrap";
-
 import {
-  Badge,
   Card,
-  CardHeader,
   CardFooter,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  Media,
-  Pagination,
-  PaginationItem,
-  PaginationLink,
-  Progress,
-  Table,
   Container,
   Row,
-  UncontrolledTooltip,
 } from "reactstrap";
 
 // core components
 import Header from "components/Headers/Header.js";
 import TableProducts from "components/Components/Table";
 import "./styleProductsUser.css";
-const MapWrapper = () => {
-  return (
-    <>
-      <div className="map-canvas">
-        <h1> Products Page User</h1>
-      </div>
-    </>
-  );
-};
+// const MapWrapper = () => {
+//   return (
+//     <>
+//       <div className="map-canvas">
+//         <h1> Products Page User</h1>
+//       </div>
+//     </>
+//   );
+// };
 
 const Products = () => {
   return (

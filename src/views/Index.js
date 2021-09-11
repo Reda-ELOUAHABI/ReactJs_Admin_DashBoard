@@ -26,8 +26,7 @@ import {
   chartExample1,
   chartExample2,
   chartExample3,
-  config,
-  dataDoughnut
+
 } from "variables/charts.js";
 
 import Header from "components/Headers/Header.js";

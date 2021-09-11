@@ -1,34 +1,20 @@
-import React, { useState } from "react";
+import React  from "react";
 // react component that copies the given text inside your clipboard
-import { CopyToClipboard } from "react-copy-to-clipboard";
+// import { CopyToClipboard } from "react-copy-to-clipboard";
 // reactstrap components
 import { } from "reactstrap";
 // core components
 import Header from "components/Headers/Header.js";
 
-import profile from "../../assets/My-Images/profile.png";
 // reactstrap components
 import {
-    Badge,
     Card,
     CardHeader,
-    CardFooter,
-    DropdownMenu,
-    DropdownItem,
-    UncontrolledDropdown,
-    DropdownToggle,
-    Media,
-    Pagination,
-    PaginationItem,
-    PaginationLink,
-    Progress,
-    Table,
     Container,
     Row,
-    UncontrolledTooltip,
 } from "reactstrap";
 
-import { CardBody, CardTitle, Col } from "reactstrap";
+// import { CardBody, CardTitle, Col } from "reactstrap";
 import Logo from "../../assets/My-Images/logo_real.png";
 import Image1 from "../../assets/My-Images/image1.png";
 import Image2 from "../../assets/My-Images/image2.png";
@@ -37,11 +23,11 @@ import Image4 from "../../assets/My-Images/image4.png";
 // core components
 //import Header from "components/Headers/Header.js";
 import "./style_orders.scss";
-import Caard from "components/Components/Card";
+// import Caard from "components/Components/Card";
 
-import MyCarousel from "components/Components/MyCarousel";
-import CardSpecial from "./CardSpecial";
-import ArgonHeaderCards from "./ArgonHeaderCards";
+// import MyCarousel from "components/Components/MyCarousel";
+// import CardSpecial from "./CardSpecial";
+// import ArgonHeaderCards from "./ArgonHeaderCards";
 import BlueCards from "components/Components/BlueCards";
 import "./indexUser_style.scss";
 function IndexUser() {

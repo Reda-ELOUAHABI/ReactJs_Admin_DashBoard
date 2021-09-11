@@ -1,21 +1,14 @@
 
 // reactstrap components
 import {
-  Button,
-  Card,
-  CardHeader,
-  CardBody,
   FormGroup,
   Form,
   Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Row,
   Col,
-  Label
+
 } from "reactstrap";
-const img = "https://picsum.photos/200";
+//const img = "https://picsum.photos/200";
 const Login = () => {
 
 
@@ -164,7 +157,7 @@ const Login = () => {
 };
 
 export default Login;
-const changeOpacity = () => {
-  document.getElementById("fa-envelope").style.opacity = "0.5";
+// const changeOpacity = () => {
+//   document.getElementById("fa-envelope").style.opacity = "0.5";
 
-}
+// }

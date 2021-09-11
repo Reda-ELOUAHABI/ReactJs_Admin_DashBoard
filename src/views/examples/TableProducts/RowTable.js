@@ -4,23 +4,7 @@ import React from "react";
 // import { Card, Container, Row } from "reactstrap";
 
 import {
-  Badge,
-  Card,
-  CardHeader,
-  CardFooter,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  DropdownToggle,
   Media,
-  Pagination,
-  PaginationItem,
-  PaginationLink,
-  Progress,
-  Table,
-  Container,
-  Row,
-  UncontrolledTooltip,
 } from "reactstrap";
 function RowTable(props) {
   return (
@@ -73,9 +57,9 @@ function RowTable(props) {
         <div
           style={{
             backgroundColor: 
-            props.status=="Available" ?
+            props.status==="Available" ?
               "rgb(236, 236, 255)" :
-                  props.status=="Almost finished" ?
+                  props.status==="Almost finished" ?
                       "rgb(245, 226, 198)" : "rgb(235, 161, 150)" ,
            // height: "auto",
             width: "100px",
@@ -86,9 +70,9 @@ function RowTable(props) {
             borderRadius: "90px",
             textAlign: "center",
             color:
-            props.status=="Available" ?
+            props.status==="Available" ?
             "royalblue" :
-                  props.status=="Almost finished" ?
+                  props.status==="Almost finished" ?
                       "rgb(255, 184, 5)" : "rgb(245, 88, 56)" ,
             
           }}
@@ -99,7 +83,8 @@ function RowTable(props) {
       </th>
 
       <th>
-        <a style={{
+        <a
+        href="#/" style={{
           textAlignP: "center" ,
           fontSize : "30px"       }}>
         <i class="fas fa-ellipsis-h" ></i>

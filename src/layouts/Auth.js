@@ -1,13 +1,13 @@
 import React from "react";
 import { useLocation, Route, Switch, Redirect } from "react-router-dom";
 // reactstrap components
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row } from "reactstrap";
 
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+// import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 // core components
-import AuthNavbar from "components/Navbars/AuthNavbar.js";
-import AuthFooter from "components/Footers/AuthFooter.js";
+// import AuthNavbar from "components/Navbars/AuthNavbar.js";
+// import AuthFooter from "components/Footers/AuthFooter.js";
 import "./StyleAuth.scss"
 
 import routes from "routes.js";

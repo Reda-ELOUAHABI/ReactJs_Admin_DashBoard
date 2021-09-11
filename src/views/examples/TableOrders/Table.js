@@ -4,23 +4,7 @@ import React from "react";
 // import { Card, Container, Row } from "reactstrap";
 
 import {
-  Badge,
-  Card,
-  CardHeader,
-  CardFooter,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  Media,
-  Pagination,
-  PaginationItem,
-  PaginationLink,
-  Progress,
   Table,
-  Container,
-  Row,
-  UncontrolledTooltip,
 } from "reactstrap";
 import RowTable from "./RowTable";
 

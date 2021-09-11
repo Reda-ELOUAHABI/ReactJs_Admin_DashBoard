@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { Label, FormGroup, Input , Col , Row} from 'reactstrap';
+import React, { useState } from 'react'
+import { Label , Col , Row} from 'reactstrap';
 import "./LoginRegisterStyle.scss"
 
 function LoginRegister(props) {
@@ -36,7 +36,7 @@ function LoginRegister(props) {
                             <p style={{color: "royalblue",
                             fontWeight: "bold",
                             cursor: "pointer"
-                            }}><a>
+                            }}><a href="#/">
                                 Forgot your password ?
                             </a></p>
                             {/* <div style={{whiteSpace: "nowrap",}}>
@@ -70,7 +70,7 @@ function LoginRegister(props) {
                             <button style={{
                                 marginBottom: "20px"
                             }}>login</button>
-                            <p class="message1">Already registered? <a href="#"
+                            <p class="message1">Already registered? <a href="#/"
                                 onClick={Toggle}
                             >Sign In</a></p>
                         </form>
@@ -105,7 +105,7 @@ function LoginRegister(props) {
                             <p style={{color: "royalblue",
                             fontWeight: "bold",
                             cursor: "pointer"
-                            }}><a>
+                            }}><a href="#/">
                                 Forgot your password ?
                             </a></p>
                             {/* <div style={{whiteSpace: "nowrap",}}>
@@ -139,7 +139,7 @@ function LoginRegister(props) {
                             <button style={{
                                 marginBottom: "20px"
                             }}>login</button>
-                            <p class="message1">Not registered? <a href="#"
+                            <p class="message1">Not registered? <a href="#/"
 
                                 onClick={Toggle}
 

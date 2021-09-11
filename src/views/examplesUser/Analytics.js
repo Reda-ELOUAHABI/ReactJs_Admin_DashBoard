@@ -2,23 +2,7 @@ import React from "react";
 import profile from "../../assets/My-Images/profile.png";
 // reactstrap components
 import {
-  Badge,
-  Card,
-  CardHeader,
-  CardFooter,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  Media,
-  Pagination,
-  PaginationItem,
-  PaginationLink,
-  Progress,
-  Table,
   Container,
-  Row,
-  UncontrolledTooltip,
 } from "reactstrap";
 // core components
 import Header from "components/Headers/Header.js";
@@ -44,6 +28,7 @@ const Analytics = () => {
 <div style={{
   margin: "100px"
 }}></div>
+        
         <ul className="caard-list">
           <li className="caard caard1">
             <a
@@ -72,9 +57,8 @@ const Analytics = () => {
           </li>
 
           <li class="caard caard2">
-            <a
-              class="caard-image"
-              href="/#"
+            <a  class="caard-image"
+              href="#/"
               target="_blank"
               style={{
                 backgroundImage:
@@ -85,9 +69,13 @@ const Analytics = () => {
                 top: "0",
                 backgroundSize: "800px",
                 backgroundRepeat: "no-repeat",
-                height: "10px",
+                height: "10px"
               }}
-            ></a>
+            >
+            {/* to fix the enchore problem */}
+            .
+            
+            </a>
             <a
               class="caard-description"
               href="/#"
@@ -167,8 +155,12 @@ const Analytics = () => {
                 <button className="PlansBtn">Plans</button>
               </div>
             </a>
+          
+          
           </li>
         </ul>
+      
+      
       </Container>
     </>
   );

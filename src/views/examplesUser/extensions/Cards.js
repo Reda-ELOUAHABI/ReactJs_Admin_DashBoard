@@ -6,7 +6,7 @@ function CardsExtension(props) {
       <div className="cardInsider">
         <div>
           <div>
-            <img className="imageExtension" src={props.imgURL} width="100" />
+            <img className="imageExtension" src={props.imgURL} width="100" alt="imageExt" />
 
             <div className="activeDiv">Active</div>
           </div>

@@ -1,13 +1,4 @@
 import React from 'react';
-import {
-    Card,
-    CardHeader,
-    CardBody,
-    Container,
-    Row,
-    Col,
-    UncontrolledTooltip,
-    } from "reactstrap";
 
 import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 

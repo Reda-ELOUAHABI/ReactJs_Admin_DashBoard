@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 // react component that copies the given text inside your clipboard
-import { CopyToClipboard } from "react-copy-to-clipboard";
+// import { CopyToClipboard } from "react-copy-to-clipboard";
 // reactstrap components
 import {
 
@@ -8,26 +8,10 @@ import {
 // core components
 import Header from "components/Headers/Header.js";
 
-import profile from "../../assets/My-Images/profile.png";
+
 // reactstrap components
 import {
-  Badge,
-  Card,
-  CardHeader,
-  CardFooter,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  Media,
-  Pagination,
-  PaginationItem,
-  PaginationLink,
-  Progress,
-  Table,
   Container,
-  Row,
-  UncontrolledTooltip,
 } from "reactstrap";
 // core components
 //import Header from "components/Headers/Header.js";
@@ -39,7 +23,7 @@ import CardSpecial from "./CardSpecial";
 
 
 const Orders = () => {
-  const [copiedText, setCopiedText] = useState();
+  // const [copiedText, setCopiedText] = useState();
   return (
     <>
       <Header />

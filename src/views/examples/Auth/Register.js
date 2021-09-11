@@ -1,21 +1,15 @@
 
 // reactstrap components
 import {
-  Button,
-  Card,
-  CardHeader,
-  CardBody,
   FormGroup,
   Form,
   Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
+
   Row,
   Col,
-  Label
+
 } from "reactstrap";
-const img = "https://picsum.photos/200";
+// const img = "https://picsum.photos/200";
 const Register = () => {
 
 

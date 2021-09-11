@@ -1,8 +1,26 @@
-import AdminNavbar from "components/Navbars/AdminNavbar";
 import React from "react";
-import { Media } from "reactstrap";
+// import { Card } from "reactstrap";
+// import profile from "../../../assets/My-Images/profile.png";
+// import caard_list_obj from "./ProfilecteStyles"; 
+// import { caard_obj } from "./ProfilecteStyles";
+import './ProfileStyle.scss'
 
 function Profile() {
+
+  const divStyle = {
+    marginLeft: "10px",
+    marginRight: "10px",
+    fontWeight: "700",
+  
+  }
+
+  const pstyle = {
+    marginLeft: "10px",
+    marginRight: "10px",
+    fontWeight: "700",
+  
+  }
+
   return (
     <div>
       {/* <AdminNavbar /> */}
@@ -20,13 +38,9 @@ function Profile() {
         <div
           style={{
             marginLeft: "40px",
-            // marginTop: "40px",
             display: "flex",
           }}
         >
-          {/* <span className="avatar avatar-lg rounded-circle" */}
-
-
 <div style={{
               height: "20px",
               minWidth: "50px",
@@ -38,44 +52,25 @@ function Profile() {
               minWidth: "50px",
               borderRadius: "50%",
             }}
-            // height="100"
-            // width="100"
             alt="..."
             //user profile img hosted
             src="
                        https://i.ibb.co/zNBr3SD/Screenshot-2021-07-14-234407.png
-                      
                       "
-          //src="../../assets/My-Images/profile.png"
           />
 
 <div
             style={{
                position: "relative",
               top: "-30px",
-              // left: "70px",
-              // opacity: "0.5",
-
-              //
-
-              // transform: "translate(50%, 50%)",
               height: "30px",
               minWidth: "40px",
               borderRadius: " 0 0 150px 150px",
+              // for opacity , I use the rgba
               backgroundColor: "rgba(57, 72, 204,.5)",
-
-              // Half Cercle
-              // width: "100px",
-              // height: "40px",
-              // backgroundColor: "lightgreen",
-              // borderBottomLeftRadius: "1110px",
-              // borderBottomRightRadius: "1110px",
-              // //border: "10px solid gray",
-              // borderTop: "0",
-              // //margin: "-10",
             }}
           >
-            <a href="/"
+            <a href="#/"
             style={{
               paddingLeft: "10px",
               textAlign: "center",
@@ -98,33 +93,183 @@ function Profile() {
             <h2>Mohamed Maymoun</h2>
 
             <p>
+            <span style={{color: "black" , fontWeight: "400"}}>
               Harnes The Power Of your Dream
+              </span>
               <br></br>
               johnsmith@gmail.com
             </p>
           </div>
         </div>
+
+
+        <hr style={{
+          marginTop:  "-20px",
+          height: "0.1px"
+        }}
+          />
+
+<div style={{
+  display: "flex",
+  marginLeft: "50px"
+}}>
+
+<div style={divStyle}>
+  <p  style={pstyle}>
+    20 <br/>
+    Stores
+  </p>
+</div>
+
+<div style={divStyle}>
+  <p  style={pstyle}>
+    20 <br/>
+    Purchases
+  </p>
+</div>
+
+<div style={divStyle}>
+  <p  style={pstyle}>
+    20 <br/>
+    Customers
+  </p>
+</div>
+
+<div style={divStyle}>
+  <p  style={pstyle}>
+    20 <br/>
+    Users
+  </p>
+</div>
+
+<div style={divStyle}>
+  <p  style={pstyle}>
+    20 <br/>
+    Followers
+  </p>
+</div>
+
+
+
+<div style={{
+  width: "400px"
+}}>
+
+</div>
+{/* Button */}
+<div>
+  <button  style={{marginBottom: "10px",
+    // position: 'relative',
+  // bottom: '60px',
+  // left: '920px',
+  borderRadius: '7px',
+  border: 'none',
+  backgroundColor: '#d9d9d9',
+  color: 'white',
+  width: '150px',
+  height: '40px'
+   }} > <i class="fas fa-plus-circle" style  = {{
+     position: "static"
+   }}></i> Create a Store</button>
+
+</div>
+
+
+</div>
+
+<hr style={{
+          marginTop:  "-20px",
+          height: "1px"
+        }}
+          />
+          
+
+<div style={{display: "flex",
+gap: "30px 30px",
+alignContent: "center",
+alignItems: "center",
+//justifyContent: "center",
+             marginLeft:"100px",
+             marginBottom:"300px",
+
+}}>
+
+{/* Card 1 */}
+
+<div className="card1 card-1" style={{
+  display: "flex",
+// gap: "30px 30px",
+flexDirection: "column",
+// alignContent: "center",
+// alignItems: "center",
+//justifyContent: "center",
+
+}}>
+
+<div style={{
+  flex: "1"
+}}>
+  <img maxWidth="200px" height="78px" src="https://utiee.com/img/cms/about-us/1-about-utiee.jpg" alt="beautyWomen1" />
+</div>
+
+<div style={{
+  display: "flex",
+
+
+}}>
+  <img style={{
+  flex: "0.1"
+}}  width="100px" Maxheight="35px" src="https://utiee.com/img/cms/about-us/1-about-utiee.jpg" alt="beautyWomen1" />
+  <div style={{
+    flex: "0.1",
+    width: "20px"
+  }}>
+
+  </div>
+  <img  style={{
+  flex: "0.4"
+}}  width="100px" Maxheight="35px"src="https://utiee.com/img/cms/about-us/1-about-utiee.jpg" alt="beautyWomen1" />
+
+
+
+</div>
+</div>
+{/* Card 2 */}
+
+<div>
+
+
+</div>
+
+
+{/* Card 3 */}
+
+<div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
 
-      {/* <Media className="align-items-center">
-                  <span className="avatar avatar-sm rounded-circle">
-                    <img
-                      alt="..."
-                      //user profile img hosted
-                      src="https://i.ibb.co/zNBr3SD/Screenshot-2021-07-14-234407.png"
-                      //src="../../assets/My-Images/profile.png"
-                    />
-                  </span>
-                  <Media className="ml-2 d-none d-lg-block">
-                    <span className="mb-0 text-sm font-weight-bold">
-                      Mohammed Ali
-                    </span>
-                  </Media>
-                  <i className="fas fa-sort-down" style={{}}></i>
-                </Media>
-         */}
+
     </div>
   );
+
+
 }
 
 export default Profile;
