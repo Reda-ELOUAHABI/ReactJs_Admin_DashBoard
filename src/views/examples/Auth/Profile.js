@@ -1,71 +1,112 @@
-import AdminNavbar from 'components/Navbars/AdminNavbar'
-import React from 'react'
-import { Media } from 'reactstrap'
-
+import AdminNavbar from "components/Navbars/AdminNavbar";
+import React from "react";
+import { Media } from "reactstrap";
 
 function Profile() {
-    return (
-        <div>
-        {/* <AdminNavbar /> */}
-            {/* <img /> */}
-<div style={
-    {
-        height: "203px",
-       // backgroundColor: "transparent"
-    }
-}>
+  return (
+    <div>
+      {/* <AdminNavbar /> */}
+      {/* <img /> */}
+      <div
+        style={{
+          height: "203px",
+          // backgroundColor: "transparent"
+        }}
+      ></div>
 
-</div>
+      {/* The Real Profile Page Design */}
 
+      <div>
+        <div
+          style={{
+            marginLeft: "40px",
+            // marginTop: "40px",
+            display: "flex",
+          }}
+        >
+          {/* <span className="avatar avatar-lg rounded-circle" */}
 
-{/* The Real Profile Page Design */}
-
-<div>
 
 <div style={{
-  display: "flex",
-}}>
-
-
-<span className="avatar avatar-lg rounded-circle" style={{
-  height: "150px",
-  width: "150px"
-}}>
-<img
-
-// height="100"
-// width="100"
-                      alt="..."
-                      //user profile img hosted
-                      src="
+              height: "20px",
+              minWidth: "50px",
+              borderRadius: "50%",
+            }}>
+  <img
+            style={{
+              height: "70px",
+              minWidth: "50px",
+              borderRadius: "50%",
+            }}
+            // height="100"
+            // width="100"
+            alt="..."
+            //user profile img hosted
+            src="
                        https://i.ibb.co/zNBr3SD/Screenshot-2021-07-14-234407.png
                       
                       "
-                      //src="../../assets/My-Images/profile.png"
-                    />
+          //src="../../assets/My-Images/profile.png"
+          />
 
-                    </span>
-                    <button> 
-                    
-                    </button>
+<div
+            style={{
+               position: "relative",
+              top: "-30px",
+              // left: "70px",
+              // opacity: "0.5",
 
+              //
 
-<div>
-               <h2>
-                      Mohamed Maymoun
-                    </h2>
+              // transform: "translate(50%, 50%)",
+              height: "30px",
+              minWidth: "40px",
+              borderRadius: " 0 0 150px 150px",
+              backgroundColor: "rgba(57, 72, 204,.5)",
 
-                    <p>Harnes The Power Of your Dream 
-                    <br></br> 
-                    johnsmith@gmail.com</p>
-                   
+              // Half Cercle
+              // width: "100px",
+              // height: "40px",
+              // backgroundColor: "lightgreen",
+              // borderBottomLeftRadius: "1110px",
+              // borderBottomRightRadius: "1110px",
+              // //border: "10px solid gray",
+              // borderTop: "0",
+              // //margin: "-10",
+            }}
+          >
+            <a href="/"
+            style={{
+              paddingLeft: "10px",
+              textAlign: "center",
+              opacity: "1",
+              color: "white",
+            }}
+            >
+              <i class="fas fa-pen"></i> Edit
+            </a>
+          </div>
+
+       
 </div>
-     
-</div>
+          <div style={{width: "30px"}}>
 
-</div>
+          </div>
+         {/* </span> */}
 
-            {/* <Media className="align-items-center">
+          <div>
+            <h2>Mohamed Maymoun</h2>
+
+            <p>
+              Harnes The Power Of your Dream
+              <br></br>
+              johnsmith@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* <Media className="align-items-center">
                   <span className="avatar avatar-sm rounded-circle">
                     <img
                       alt="..."
@@ -82,9 +123,8 @@ function Profile() {
                   <i className="fas fa-sort-down" style={{}}></i>
                 </Media>
          */}
-        
-        </div>
-    )
+    </div>
+  );
 }
 
-export default Profile
+export default Profile;
