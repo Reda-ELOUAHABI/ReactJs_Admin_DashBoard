@@ -24,13 +24,13 @@ function TableProductsUser() {
             <th>
             <label className="container1">
                 <input type="checkbox" />
-                <span class="checkmark"></span>{" "}
+                <span className="checkmark"></span>{" "}
               </label>
             </th>
             <th scope="col">
               <h4>
                 Product 
-                {/* <i class="fas fa-sort-down"></i> */}
+                {/* <i className="fas fa-sort-down"></i> */}
               </h4>
             </th>
             <th scope="col">

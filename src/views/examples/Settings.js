@@ -269,7 +269,7 @@ const FormSetting1 = () => {
                 </Row>
 
                 <Button style={stylebtnSubmit
-                } >  <i class="fas fa-sync"></i>Submit</Button>
+                } >  <i className="fas fa-sync"></i>Submit</Button>
             </Form>
 
         </>
@@ -290,7 +290,7 @@ const FormSetting2 = () => {
                             </Label>
 
 
-                            <select class="form-select" aria-label="Default select example" style={{
+                            <select className="form-select" aria-label="Default select example" style={{
                                 height: "calc(1.5em + 1.25rem - 2px)",
                             }}>
                                 <option selected>(UTC + 00:00)UTC</option>
@@ -305,7 +305,7 @@ const FormSetting2 = () => {
                             <Label for="timezone" sm={2} style={styleNoWrap}>
                                 Time Zone
                             </Label>
-                            <select class="form-select" aria-label="Default select example" style={{
+                            <select className="form-select" aria-label="Default select example" style={{
                                 height: "calc(1.5em + 1.25rem - 2px)",
                             }}>
                                 <option selected>6 Apr, 2019</option>
@@ -321,7 +321,7 @@ const FormSetting2 = () => {
                             <Label for="timeformat" sm={2} style={styleNoWrap}>
                                 Time Format
                             </Label>
-                            <select class="form-select" aria-label="Default select example" style={{
+                            <select className="form-select" aria-label="Default select example" style={{
                                 height: "calc(1.5em + 1.25rem - 2px)",
                             }}>
                                 <option selected>12:00 AM</option>
@@ -356,7 +356,7 @@ const FormSetting2 = () => {
                             <Label for="UserPTHM" sm={2} style={styleNoWrap}>
                                 User Panel Theme
                             </Label>
-                            <select class="form-select" aria-label="Default select example" style={{
+                            <select className="form-select" aria-label="Default select example" style={{
                                 height: "calc(1.5em + 1.25rem - 2px)",
                             }}>
                                 <option selected>Default</option>
@@ -374,13 +374,13 @@ const FormSetting2 = () => {
                             {/* <input type="checkbox" checked data-toggle="toggle" data-style="ios" /> */}
                             <div></div>
 
-                            <label class="form-switch">
+                            <label className="form-switch">
                                 `  <input type="checkbox" />
                                 <i></i>
                                 Enable
                             </label>`
-                            {/* <div class="toggleWrapper">
-                            <input type="checkbox" name="toggle1" class="mobileToggle" id="toggle1" checked />
+                            {/* <div className="toggleWrapper">
+                            <input type="checkbox" name="toggle1" className="mobileToggle" id="toggle1" checked />
                             <label for="toggle1"></label>
                             </div> */}
                             <FormText>Make site offline</FormText>
@@ -405,7 +405,7 @@ const FormSetting2 = () => {
                     </Col>
                 </Row>
                 <Button style={stylebtnSubmit
-                } >  <i class="fas fa-sync"></i>Submit</Button>
+                } >  <i className="fas fa-sync"></i>Submit</Button>
             </Form>
 
         </>
@@ -483,7 +483,7 @@ const FormSetting3 = () => {
                     </Col>
                 </Row>
                 <Button style={stylebtnSubmit
-                } >  <i class="fas fa-sync"></i>Submit</Button>
+                } >  <i className="fas fa-sync"></i>Submit</Button>
             </Form>
 
         </>
@@ -570,7 +570,7 @@ const FormSetting4 = () => {
                 </b>
                  </p>
                 <Button style={stylebtnSubmit
-                } >  <i class="fas fa-sync"></i>Submit</Button>
+                } >  <i className="fas fa-sync"></i>Submit</Button>
             </Form>
 
         </>

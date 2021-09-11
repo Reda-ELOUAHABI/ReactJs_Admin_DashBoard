@@ -64,25 +64,25 @@ const UserNavbar = (props) => {
           </Form>
 
           <a href="#/" className="test">
-            <i class="fas fa-layer-group"></i>
-            <span class="num1">2</span>
+            <i className="fas fa-layer-group"></i>
+            <span className="num1">2</span>
           </a>
 
           {/* <button className="btn "> */}
-          {/* <i class="fas fa-check-circle"></i> */}
+          {/* <i className="fas fa-check-circle"></i> */}
           <a href="#/" className="test">
-            <span class="fa fa-check-circle"></span>
-            <span class="num2">2</span>
+            <span className="fa fa-check-circle"></span>
+            <span className="num2">2</span>
           </a>
-          {/* <a class="fa fa-globe">
+          {/* <a className="fa fa-globe">
               
               
             </a> */}
           {/* </button> */}
 
           <a href="#/" className="test">
-            <i class="fas fa-shopping-cart fa-shopping-cart1"></i>
-            <span class="num3">2</span>
+            <i className="fas fa-shopping-cart fa-shopping-cart1"></i>
+            <span className="num3">2</span>
           </a>
 
           <Nav className="align-items-center d-none d-md-flex" navbar>

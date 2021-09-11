@@ -93,7 +93,7 @@ const Login = () => {
             <Form>
               <FormGroup>
                 {/* <Label for="exampleEmail">Email</Label> */}
-                <i class="far fa-envelope" 
+                <i className="far fa-envelope" 
                 // onClick={changeOpacity()} 
                 style={{
                 position: "relative",
@@ -114,7 +114,7 @@ const Login = () => {
               </FormGroup>
               <FormGroup>
                 {/* <Label for="examplePassword">Password</Label> */}
-                <i class="fas fa-lock" 
+                <i className="fas fa-lock" 
                 style={{
                 position: "relative",
                 top: "30px",

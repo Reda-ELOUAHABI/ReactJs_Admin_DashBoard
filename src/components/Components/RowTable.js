@@ -11,7 +11,7 @@ function RowTable() {
       <th>
         <label className="container1">
           <input type="checkbox" />
-          <span class="checkmark"></span>{" "}
+          <span className="checkmark"></span>{" "}
         </label>
       </th>
       <th scope="row">

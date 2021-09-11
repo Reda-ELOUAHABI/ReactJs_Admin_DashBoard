@@ -57,7 +57,7 @@ function IndexUser() {
 
                 <button className="thisMonth">
                     <p>
-                        This month <i class="fas fa-chevron-down"></i>
+                        This month <i className="fas fa-chevron-down"></i>
                     </p>
                 </button>
 
@@ -80,7 +80,7 @@ function IndexUser() {
                             <CardHeader className="bg-transparent">
                                 <div>
                                     <h1>
-                                        <i class="fas fa-shopping-cart"></i>
+                                        <i className="fas fa-shopping-cart"></i>
                                         New Orders
                                     </h1>
                                     <br />
@@ -108,13 +108,13 @@ function IndexUser() {
                                 <CardHeader className="bg-transparent">
                                     <div>
                                         <h1 className="Title2Card">
-                                            <i class="fas fa-shopping-cart text-primary"></i>
+                                            <i className="fas fa-shopping-cart text-primary"></i>
                                             &nbsp;&nbsp; Top Selling
                                         </h1>
                                     </div>
                                     <button className="AddItems">
                                         <p>
-                                            Add Items <i class="fas fa-plus "></i>
+                                            Add Items <i className="fas fa-plus "></i>
                                         </p>
                                     </button>
                                 </CardHeader>
@@ -134,14 +134,14 @@ function IndexUser() {
                                 <CardHeader className="bg-transparent">
                                     <div>
                                         <h1 className="Title2Card">
-                                            <i class="fas fa-shopping-cart text-danger"></i>
+                                            <i className="fas fa-shopping-cart text-danger"></i>
                                             &nbsp; Products almost sold out
                                         </h1>
                                     </div>
 
                                     <button className="AddItems">
                                         <p>
-                                            AddItems <i class="fas fa-plus"></i>
+                                            AddItems <i className="fas fa-plus"></i>
                                         </p>
                                     </button>
                                 </CardHeader>
@@ -159,7 +159,7 @@ function IndexUser() {
                             <CardHeader className="bg-transparent">
                                 <div>
                                     <h3 className="noteOrder">
-                                        <i class="fas fa-chevron-down downn"></i>
+                                        <i className="fas fa-chevron-down downn"></i>
                                         There's no orders right now
                                     </h3>
                                 </div>

@@ -18,9 +18,9 @@ function LoginRegister(props) {
                 </p>
 
                 
-                <div class="login-page1">
-                    <div class="form1" style={{height:"480px"}}>
-                    <form class="login-form1">
+                <div className="login-page1">
+                    <div className="form1" style={{height:"480px"}}>
+                    <form className="login-form1">
                     <Label for="name" className="LabelPositionning">Name</Label>
                             <br></br>
                             <input type="text" placeholder="Enter Your Name" />
@@ -70,7 +70,7 @@ function LoginRegister(props) {
                             <button style={{
                                 marginBottom: "20px"
                             }}>login</button>
-                            <p class="message1">Already registered? <a href="#/"
+                            <p className="message1">Already registered? <a href="#/"
                                 onClick={Toggle}
                             >Sign In</a></p>
                         </form>
@@ -92,9 +92,9 @@ function LoginRegister(props) {
                 <p className="titleP" >
                     Sign in in your account to continue
                 </p>
-                <div class="login-page1">
-                    <div class="form1" style={{height:"450px"}}>
-                        <form class="login-form1">
+                <div className="login-page1">
+                    <div className="form1" style={{height:"450px"}}>
+                        <form className="login-form1">
                             <Label for="email" className="LabelPositionning">Email</Label>
                             <br></br>
                             <input type="text" placeholder="Enter Your Email" />
@@ -139,7 +139,7 @@ function LoginRegister(props) {
                             <button style={{
                                 marginBottom: "20px"
                             }}>login</button>
-                            <p class="message1">Not registered? <a href="#/"
+                            <p className="message1">Not registered? <a href="#/"
 
                                 onClick={Toggle}
 

@@ -31,9 +31,9 @@ const Products = () => {
           <div className="col">
             <h3 className="mb-0">Products</h3>
             <p>
-              <i class="fas fa-long-arrow-alt-down"></i> import &nbsp;{" "}
-              <i class="fas fa-long-arrow-alt-up"></i> export &nbsp; 
-              More Actions <i class="fas fa-sort-down"></i>
+              <i className="fas fa-long-arrow-alt-down"></i> import &nbsp;{" "}
+              <i className="fas fa-long-arrow-alt-up"></i> export &nbsp; 
+              More Actions <i className="fas fa-sort-down"></i>
             </p>
             <button className="AddProductBTN"> Add Products</button>
             <Card className="shadow">
@@ -42,22 +42,22 @@ const Products = () => {
               style={{
                     marginBottom: "70px",
               }} />
-              {/* <div class="container small my-5"> */}
+              {/* <div className="container small my-5"> */}
               <div>
                 <div>
-                  {/* <div class="row d-flex justify-content-between mx-auto mt-4 mb-3"> */}
+                  {/* <div className="row d-flex justify-content-between mx-auto mt-4 mb-3"> */}
                   <div id="Filter-Serach">
-                    {/* <div class="col-lg-8 col-md-12"> */}
-                    <div class="row justify-content-end">
+                    {/* <div className="col-lg-8 col-md-12"> */}
+                    <div className="row justify-content-end">
                       <i
-                        class="fa fa-search"
+                        className="fa fa-search"
                         id="iconSearch"
                         aria-hidden="true"
                       ></i>
-                      <div class="input-group col-lg-10 col-md-12 SearchProducts">
-                        <div class="input-group-append">
+                      <div className="input-group col-lg-10 col-md-12 SearchProducts">
+                        <div className="input-group-append">
                           <select
-                            class="form-control rounded-0 text-capitalize"
+                            className="form-control rounded-0 text-capitalize"
                             id="search-filter"
                             name="search-filter"
                           >
@@ -67,10 +67,10 @@ const Products = () => {
                           </select>
                         </div>
 
-                        <div class="input-group-prepend ">
-                          {/* <i class="fa fa-search" aria-hidden="true" ></i> */}
+                        <div className="input-group-prepend ">
+                          {/* <i className="fa fa-search" aria-hidden="true" ></i> */}
                           <input
-                            class="form-control"
+                            className="form-control"
                             id="search-box"
                             type="text"
                             name="search"

@@ -12,7 +12,7 @@ function RowTable(props) {
       <th>
         <label className="container1">
           <input type="checkbox" />
-          <span class="checkmark"></span>{" "}
+          <span className="checkmark"></span>{" "}
         </label>
       </th>
       <th scope="row">
@@ -87,7 +87,7 @@ function RowTable(props) {
         href="#/" style={{
           textAlignP: "center" ,
           fontSize : "30px"       }}>
-        <i class="fas fa-ellipsis-h" ></i>
+        <i className="fas fa-ellipsis-h" ></i>
         </a>
       </th>
     </tr>

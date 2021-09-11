@@ -2,7 +2,7 @@ import React from "react";
 
 function CardsExtension(props) {
   return (
-    <div class="card">
+    <div className="card">
       <div className="cardInsider">
         <div>
           <div>

@@ -40,22 +40,22 @@ const Orders = () => {
             borderRadius: "20px",
           }}>
                 <div>
-                  {/* <div class="row d-flex justify-content-between mx-auto mt-4 mb-3"> */}
+                  {/* <div className="row d-flex justify-content-between mx-auto mt-4 mb-3"> */}
                   <div id="Filter-Serach">
-                    {/* <div class="col-lg-8 col-md-12"> */}
-                    <div class="row justify-content-end">
+                    {/* <div className="col-lg-8 col-md-12"> */}
+                    <div className="row justify-content-end">
                       <i
-                        class="fa fa-search"
+                        className="fa fa-search"
                         id="iconSearch4Orders"
                         aria-hidden="true"
                       ></i>
-                      <div class="input-group col-lg-10 col-md-12 SearchProducts">
+                      <div className="input-group col-lg-10 col-md-12 SearchProducts">
                       
 
-                        <div class="input-group-prepend ">
-                          {/* <i class="fa fa-search" aria-hidden="true" ></i> */}
+                        <div className="input-group-prepend ">
+                          {/* <i className="fa fa-search" aria-hidden="true" ></i> */}
                           <input
-                            class="form-control"
+                            className="form-control"
                             id="search-box-orders"
                             type="text"
                             name="search"
@@ -64,9 +64,9 @@ const Orders = () => {
                           />
                         </div>
 
-                        <div class="input-group-append">
+                        <div className="input-group-append">
                           <select
-                            class="form-control rounded-0 text-capitalize"
+                            className="form-control rounded-0 text-capitalize"
                             id="search-filter"
                             name="search-filter"
                           >
@@ -75,9 +75,9 @@ const Orders = () => {
                             <option value="Vendor">Date2</option>
                           </select>
                         </div>
-                        <div class="input-group-append statusBox">
+                        <div className="input-group-append statusBox">
                           <select
-                            class="form-control rounded-0 text-capitalize"
+                            className="form-control rounded-0 text-capitalize"
                             id="search-filter"
                             name="search-filter"
                           >

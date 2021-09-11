@@ -30,10 +30,10 @@ const Extensions = () => {
           className="AddExtensionBTN"
         >
           {" "}
-          <i class="fas fa-plus"></i> Add Products
+          <i className="fas fa-plus"></i> Add Products
         </button>
-        <div class="centered">
-          <section class="cards">
+        <div className="centered">
+          <section className="cards">
             <CardsExtension imgURL={imgURL} />
             <CardsExtension imgURL={imgURL} />
             <CardsExtension imgURL={imgURL} />

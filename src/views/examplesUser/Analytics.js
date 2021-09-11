@@ -56,8 +56,8 @@ const Analytics = () => {
             </a>
           </li>
 
-          <li class="caard caard2">
-            <a  class="caard-image"
+          <li className="caard caard2">
+            <a  className="caard-image"
               href="#/"
               target="_blank"
               style={{
@@ -77,7 +77,7 @@ const Analytics = () => {
             
             </a>
             <a
-              class="caard-description"
+              className="caard-description"
               href="/#"
               target="_blank"
               style={{
@@ -93,13 +93,13 @@ const Analytics = () => {
           </li>
 
           <li
-            class="caard caard3"
+            className="caard caard3"
             style={{
               backgroundColor: "white",
             }}
           >
             <a
-              class="caard-image3 image_profile"
+              className="caard-image3 image_profile"
               href="/#"
               target="_blank"
               style={{
@@ -135,7 +135,7 @@ const Analytics = () => {
             </a>
 
             <a
-              class="caard-description"
+              className="caard-description"
               href="/#"
               target="_blank"
               style={{

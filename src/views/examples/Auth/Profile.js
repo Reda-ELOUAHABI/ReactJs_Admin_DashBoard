@@ -78,7 +78,7 @@ function Profile() {
               color: "white",
             }}
             >
-              <i class="fas fa-pen"></i> Edit
+              <i className="fas fa-pen"></i> Edit
             </a>
           </div>
 
@@ -168,7 +168,7 @@ function Profile() {
   color: 'white',
   width: '150px',
   height: '40px'
-   }} > <i class="fas fa-plus-circle" style  = {{
+   }} > <i className="fas fa-plus-circle" style  = {{
      position: "static"
    }}></i> Create a Store</button>
 

@@ -7,7 +7,7 @@ function Caard() {
     <div>
       <li className="caardorder">
         <div>
-          <i class="iconHeart fas fa-heart"></i>
+          <i className="iconHeart fas fa-heart"></i>
           <div className="CercleImg">
             <img
               className="ImageCard 
@@ -24,7 +24,7 @@ function Caard() {
           <div>
             <div className="hr"></div>
 
-            <div  class="button w3-rest w3-white">
+            <div  className="button w3-rest w3-white">
                  <button>View Details</button>
             </div>
            
