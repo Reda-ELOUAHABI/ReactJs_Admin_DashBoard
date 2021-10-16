@@ -12,7 +12,7 @@ import AuthLayout from "layouts/Auth.js";
 //https://github1s.com/creativetimofficial/argon-dashboard-react
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter >
     <Switch>
       <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
       <Route path="/user" render={(props) => <UserLayout {...props} />} />
